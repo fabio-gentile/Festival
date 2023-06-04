@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap');
+@font-face {
+  font-family: 'Gobold Bold';
+  src: local('Gobold Bold'), url('../../fonts/gobold/Gobold Bold.woff') format('woff');
+  font-family: 'Gobold Regular';
+  src: local('Gobold Regular'), url('../../fonts/gobold/Gobold Regular.woff') format('woff');
+}
+
+$gold : #FFD700;
+$grey : #1D1D1D;
+$fontTitleBold : 'Gobold Bold';
+$fontTitleReg : 'Gobold Regular';
+$fontText : 'Source Sans Pro';
+
