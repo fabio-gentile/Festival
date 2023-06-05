@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap");
+@font-face {
+  font-family: "Gobold Bold";
+  src: local("Gobold Bold"), url("../../fonts/gobold/Gobold Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Gobold Regular";
+  src: local("Gobold Regular"), url("../../fonts/gobold/Gobold Regular.woff") format("woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+::selection {
+  color: #1d1d1d;
+  background-color: rgba(255, 215, 0, 0.9);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+.slide {
+  min-height: 100vh;
+  position: relative;
+}
+
+.bg-home {
+  background-image: url("../img/home/home.jpg");
+  background-position: center center;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.bg-home::after {
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  background-color: rgba(29, 29, 29, 0.2);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.bg-home .date {
+  z-index: 3;
+}
+.bg-home .date h3 {
+  font-family: "Gobold Regular";
+  font-size: 3rem;
+  text-transform: lowercase;
+  color: #ffffff;
+  text-align: center;
+}
+
+.headband {
+  height: 90px;
+  background-color: #1d1d1d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+.headband .text {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-family: "Gobold Regular";
+  text-transform: lowercase;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  max-width: 500px;
+  white-space: nowrap;
+  animation: headband 5s infinite linear;
+}
+@keyframes headband {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/*# sourceMappingURL=home.css.map */

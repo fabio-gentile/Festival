@@ -1,0 +1,69 @@
+@import "./partials/config";
+
+.bg-home {
+  background-image: url("../img/home/home.jpg");
+  background-position: center center;
+  height: 80vh;
+  width: 100%;
+  @include flexCenter;
+  flex-direction: column;
+
+  &::after {
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    background-color: rgba($grey, 0.2);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+
+  .date {
+    z-index: 3;
+
+    h3 {
+      font-family: $fontTitleReg;
+      font-size: 3rem;
+      text-transform: lowercase;
+      color: $white;
+      text-align: center;
+    }
+  }
+}
+
+.headband {
+  height: 90px;
+  background-color: $grey;
+  @include flexCenter;
+  //justify-content: flex-start;
+  gap: 2rem;
+  cursor: pointer;
+  overflow: hidden;
+
+  .text {
+    color: $white;
+    font-size: 1.5rem;
+    font-family: $fontTitleReg;
+    text-transform: lowercase;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    max-width: 500px;
+    white-space: nowrap;
+    animation: headband 5s infinite linear;
+
+    @keyframes headband {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(100%);
+      }
+    }
+
+    i {
+    }
+  }
+}

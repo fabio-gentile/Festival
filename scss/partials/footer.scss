@@ -1,3 +1,81 @@
-*{
+@import "config";
 
+footer {
+  background-color: $navColor;
+  width: 100%;
+  color: $white;
+  font-family: $fontText;
+  padding: 2rem 0;
+
+  .wrapper {
+    width: 90%;
+    @include flexCenter;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 auto;
+
+    h4 {
+      font-family: $fontTitleReg;
+      font-size: 2.25rem;
+
+      @include breakpoint(400) {
+        font-size: 1.75rem;
+      }
+    }
+
+    nav {
+      ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+
+        li {
+          a {
+            color: $white;
+            text-decoration: none;
+            font-size: 1rem;
+
+            &:hover {
+              color: $gold;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+
+    .socials {
+      list-style: none;
+      @include flexCenter;
+      gap: 4rem;
+
+      @include breakpoint(550) {
+        gap: 2rem;
+      }
+
+      li {
+        a {
+          color: $white;
+
+          &:hover {
+            color: $gold;
+          }
+
+          i {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+
+    .credits {
+      font-size: 0.75rem;
+
+      p {
+        text-align: center;
+      }
+    }
+  }
 }

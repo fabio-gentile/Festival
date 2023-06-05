@@ -2,6 +2,8 @@
 @font-face {
   font-family: "Gobold Bold";
   src: local("Gobold Bold"), url("../../fonts/gobold/Gobold Bold.woff") format("woff");
+}
+@font-face {
   font-family: "Gobold Regular";
   src: local("Gobold Regular"), url("../../fonts/gobold/Gobold Regular.woff") format("woff");
 }
@@ -9,6 +11,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+::selection {
+  color: #1d1d1d;
+  background-color: rgba(255, 215, 0, 0.9);
 }
 
 @keyframes fadeIn {
@@ -31,11 +39,12 @@ header {
   left: 0;
   width: 100%;
   transition: top 0.2s ease-in-out;
+  z-index: 99;
 }
 header nav {
   width: 95%;
   margin: 0 auto;
-  height: 90px;
+  min-height: 90px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -102,7 +111,6 @@ header nav ul li .burger .bar {
   background: #ffffff;
   margin: 3px 0;
   transform-origin: left;
-  transition: all 0.5s;
 }
 header .menu {
   position: fixed;
@@ -121,6 +129,8 @@ header .menu {
   flex-direction: column;
   font-size: 4rem;
   display: none;
+  transition: width 0.2s ease, height 0.4s ease;
+  overflow: hidden;
 }
 @media (max-width: 610px) {
   header .menu {
@@ -150,8 +160,6 @@ header .menu .burger .bar {
   width: 100%;
   background: #ffffff;
   margin: 3px 0;
-  transform-origin: left;
-  transition: all 0.5s;
 }
 header .menu .burger .bar:nth-child(1) {
   transform-origin: 0 0;
