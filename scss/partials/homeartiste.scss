@@ -1,0 +1,83 @@
+@import "config";
+
+.home-artiste{
+
+      .bg{
+            // background avec js
+
+            width: 100%;
+            background-size: cover;
+            background-position: center center;
+            //transition: background-image 0.3s ease-in-out;
+            .wrapper{
+                  width: (100vw / 12) * 8;
+                  @include breakpoint(768){
+                        width: (100vw / 12) * 10;
+                  }
+                  .list{
+                        padding: 5rem 0;
+                        @include breakpoint(768){
+                              padding: 4rem 0;
+                        }
+                        @include breakpoint(360){
+                              padding: 3rem 0;
+                        }
+                        font-family: $fontTitleReg;
+                        ul{
+                              list-style: none;
+                              .active{
+                                    transition: all .3s ease-in-out;
+                                    background: $gold;
+                                    a{
+                                          color: $grey;
+                                    }
+                              }
+                              li{
+                                    cursor: pointer;
+                                    padding: 0.5rem 1rem;
+                                    width: fit-content;
+                                    @include breakpoint(768){
+                                          padding: 0.4rem .75rem;
+                                    }
+                                    @include breakpoint(360){
+                                          padding: 0.3rem .5rem;
+                                    }
+                                    a{
+                                          text-decoration: none;
+                                          color: $white;
+                                          font-size: 1.5rem;
+                                          text-transform: lowercase;
+                                          @include breakpoint(768){
+                                                font-size: 1.25rem;
+                                          }
+                                          @include breakpoint(360){
+                                                font-size: 1rem;
+                                          }
+                                    }
+                                    &:last-child {
+                                          transition: all .1s ease-in-out;
+                                          &:hover{
+                                                transform: translateX(10px);
+                                          }
+                                          a{
+                                          font-size: 1.25rem;
+                                          text-decoration: underline;
+                                          color: $gold;
+                                          @include breakpoint(360){
+                                                font-size: 0.75rem;
+                                          }
+                                          }
+                                    }
+                              }
+                        }
+                  }
+            }
+      }
+}
+$name: fiftycent, drdre, eminem, icecube, jayz, kanye, nelly, outkast, snoop;
+
+@each $iteration in $name {
+      .#{$iteration}-bg {
+            background-image: url("../../img/home/#{$iteration}.jpg");
+      }
+}
