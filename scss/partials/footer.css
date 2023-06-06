@@ -1,37 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap");
-@font-face {
-  font-family: "Gobold Bold";
-  src: local("Gobold Bold"), url("../../fonts/gobold/Gobold Bold.woff") format("woff");
-}
-@font-face {
-  font-family: "Gobold Regular";
-  src: local("Gobold Regular"), url("../../fonts/gobold/Gobold Regular.woff") format("woff");
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-::selection {
-  color: #1d1d1d;
-  background-color: rgba(255, 215, 0, 0.9);
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 100;
-  }
-}
-.slide {
-  min-height: 100vh;
-  position: relative;
-}
-
 footer {
   background-color: #1b1b1b;
   width: 100%;

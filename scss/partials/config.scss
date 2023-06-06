@@ -1,17 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap");
-
-@font-face {
-  font-family: "Gobold Bold";
-  src: local("Gobold Bold"),
-    url("../../fonts/gobold/Gobold Bold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Gobold Regular";
-  src: local("Gobold Regular"),
-    url("../../fonts/gobold/Gobold Regular.woff") format("woff");
-}
-
 $gold: #ffd700;
 $grey: #1d1d1d;
 $white: #ffffff;
@@ -21,24 +7,42 @@ $fontTitleReg: "Gobold Regular";
 $fontText: "Source Sans Pro";
 $navBarHeight: 90px;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-::selection {
-  color: $grey;
-  background-color: rgba(255, 215, 0, 0.9);
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
+@mixin init{
+  @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap");
+  @font-face {
+    font-family: "Gobold Bold";
+    src: local("Gobold Bold"),
+    url("../../fonts/gobold/Gobold Bold.woff") format("woff");
   }
-  100% {
-    opacity: 100;
+  @font-face {
+    font-family: "Gobold Regular";
+    src: local("Gobold Regular"),
+    url("../../fonts/gobold/Gobold Regular.woff") format("woff");
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  ::selection {
+    color: $grey;
+    background-color: rgba(255, 215, 0, 0.9);
+  }
+  main{
+    background-image: url("../../img/background.svg");
+    background-color: $grey;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%; /* Adjust the width and height to match your SVG dimensions */
+    height: 100%;
+  }
+  .wrapper{
+    width: (100vw / 12) * 10;
+    margin: 0 auto;
+  }
+  p{
+    font-family: $fontText;
   }
 }
 
@@ -48,13 +52,30 @@ $navBarHeight: 90px;
   }
 }
 
-@mixin flexCenter() {
+@mixin flexCenter{
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.slide {
-  min-height: 100vh;
-  position: relative;
+@mixin button{
+  width: fit-content;
+  border: none;
+  outline: none;
+  padding: .75rem 2.5rem;
+  cursor: pointer;
+  a{
+    text-decoration: none;
+    text-transform: lowercase;
+    text-align: center;
+  }
+
+  &:hover{
+    transition: all .2s ease-in-out;
+    border: 2px solid transparent;
+  }
+  @include breakpoint(360){
+    padding: .5rem 1rem;
+  }
 }
+

@@ -19,43 +19,51 @@
   background-color: rgba(255, 215, 0, 0.9);
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 100;
-  }
-}
-.slide {
-  min-height: 100vh;
-  position: relative;
+main {
+  background-image: url("../../img/background.svg");
+  background-color: #1d1d1d;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%; /* Adjust the width and height to match your SVG dimensions */
+  height: 100%;
 }
 
-.bg-home {
+.wrapper {
+  width: 83.3333333333vw;
+  margin: 0 auto;
+}
+
+p {
+  font-family: "Source Sans Pro";
+}
+
+.home-bg {
+  pointer-events: none;
   background-image: url("../img/home/home.jpg");
   background-position: center center;
+  background-repeat: no-repeat;
   height: 80vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: relative;
 }
-.bg-home::after {
+.home-bg::after {
   content: "";
   display: block;
   top: 0;
   left: 0;
   background-color: rgba(29, 29, 29, 0.2);
-  height: 100%;
   width: 100%;
+  height: 100%;
   position: absolute;
 }
-.bg-home .date {
+.home-bg .date {
   z-index: 3;
 }
-.bg-home .date h3 {
+.home-bg .date h3 {
   font-family: "Gobold Regular";
   font-size: 3rem;
   text-transform: lowercase;
@@ -63,36 +71,194 @@
   text-align: center;
 }
 
-.headband {
-  height: 90px;
-  background-color: #1d1d1d;
+section .home-ticker {
+  background: #1d1d1d;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+section .home-ticker a {
+  text-decoration: none;
+}
+section .home-ticker .scroll {
+  color: #ffffff;
+  width: 100%;
+  display: flex;
+}
+section .home-ticker .scroll:hover {
+  background: #ffd700;
+  color: #1d1d1d;
+  transition: all 0.1s ease-in-out;
+}
+section .home-ticker .scroll .text {
+  font-size: 1.5rem;
+  white-space: nowrap;
+  text-transform: lowercase;
+  animation: ticker1 20s linear infinite;
+  animation-delay: -20s;
+  padding: 1rem 0 1rem 1rem;
+  display: flex;
+  gap: 1rem;
+}
+@media (max-width: 768px) {
+  section .home-ticker .scroll .text {
+    font-size: 1rem;
+  }
+}
+section .home-ticker .scroll .text span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+section .home-ticker .scroll .text span p {
+  font-family: "Gobold Regular";
+}
+section .home-ticker .scroll .text:nth-child(2) {
+  animation: ticker2 20s linear infinite;
+  animation-delay: -10s;
+}
+@keyframes ticker2 {
+  0% {
+    transform: translateZ(0);
+  }
+  100% {
+    transform: translate3d(-200%, 0, 0);
+  }
+}
+@keyframes ticker1 {
+  0% {
+    transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.home-pres {
+  padding: 5rem 0;
+}
+@media (max-width: 768px) {
+  .home-pres {
+    padding: 4rem 0;
+  }
+}
+@media (max-width: 360px) {
+  .home-pres {
+    padding: 3rem 0;
+  }
+}
+.home-pres .wrapper {
+  display: flex;
+  height: 100%;
+}
+.home-pres .wrapper .text {
+  width: 40%;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   gap: 2rem;
-  cursor: pointer;
-  overflow: hidden;
 }
-.headband .text {
-  color: #ffffff;
-  font-size: 1.5rem;
+@media (max-width: 1600px) {
+  .home-pres .wrapper .text {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .home-pres .wrapper .text {
+    width: 100%;
+  }
+}
+.home-pres .wrapper .text h4, .home-pres .wrapper .text button a {
+  color: #ffd700;
   font-family: "Gobold Regular";
-  text-transform: lowercase;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 1rem;
-  max-width: 500px;
-  white-space: nowrap;
-  animation: headband 5s infinite linear;
 }
-@keyframes headband {
-  0% {
-    transform: translateX(-100%);
+.home-pres .wrapper .text h4 {
+  font-size: 2.25rem;
+}
+@media (max-width: 360px) {
+  .home-pres .wrapper .text h4 {
+    font-size: 1.5rem;
   }
-  100% {
-    transform: translateX(100%);
+}
+.home-pres .wrapper .text p {
+  color: #ffffff;
+  font-size: 1.25rem;
+  width: 50%;
+  text-align: center;
+}
+@media (max-width: 1600px) {
+  .home-pres .wrapper .text p {
+    width: 60%;
   }
+}
+@media (max-width: 900px) {
+  .home-pres .wrapper .text p {
+    width: 80%;
+  }
+}
+@media (max-width: 360px) {
+  .home-pres .wrapper .text p {
+    font-size: 1rem;
+  }
+}
+.home-pres .wrapper .text button {
+  width: fit-content;
+  border: none;
+  outline: none;
+  padding: 0.75rem 2.5rem;
+  cursor: pointer;
+  background: transparent;
+  border: 2px solid #ffd700;
+  border-radius: 3px;
+}
+.home-pres .wrapper .text button a {
+  text-decoration: none;
+  text-transform: lowercase;
+  text-align: center;
+}
+.home-pres .wrapper .text button:hover {
+  transition: all 0.2s ease-in-out;
+  border: 2px solid transparent;
+}
+@media (max-width: 360px) {
+  .home-pres .wrapper .text button {
+    padding: 0.5rem 1rem;
+  }
+}
+.home-pres .wrapper .text button a {
+  font-size: 1.5rem;
+}
+@media (max-width: 360px) {
+  .home-pres .wrapper .text button a {
+    font-size: 1.25rem;
+  }
+}
+.home-pres .wrapper .text button:hover {
+  background: #ffd700;
+}
+.home-pres .wrapper .text button:hover a {
+  color: #1d1d1d;
+}
+.home-pres .wrapper .img {
+  background: url("../img/home/stage.jpg") center bottom no-repeat;
+  width: 60%;
+  min-height: 25rem;
+}
+@media (max-width: 1600px) {
+  .home-pres .wrapper .img {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .home-pres .wrapper .img {
+    display: none;
+  }
+}
+
+.home-artiste {
+  width: 100%;
 }
 
 /*# sourceMappingURL=home.css.map */
