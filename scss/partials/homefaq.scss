@@ -1,0 +1,102 @@
+@import "config";
+.home-faq{
+      @include spaceSection;
+      @include flexCenter;
+      flex-direction: column;
+      gap: 2.25rem;
+      h4{
+            text-align: center;
+      }
+      .wrapper{
+            @include wrapper;
+            .question{
+                  padding: 2rem 0 0;
+                  border-bottom: $white 1px solid;
+                  &:hover{
+                        cursor: pointer;
+                  }
+                  &.active{
+                        .title i{
+                              transform: rotate(180deg);
+                        }
+                        .answer{
+                              max-height: 2000px;
+                              transition: max-height .6s ease-in-out;
+                        }
+                  }
+                  .title{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding-bottom: 2.5rem;
+                        h6, h4{
+                              font-family: $fontText;
+                              font-weight: bold;
+                        }
+                        h4, i{
+                              color: $white;
+                              font-size: 1.5rem;
+                              text-transform: none;
+                              font-weight: bold;
+                              @include breakpoint(768){
+                                    font-size: 1.25rem;
+                              }
+                              @include breakpoint(360){
+                                    font-size: 1.125rem;
+                              }
+                        }
+                        i{
+                              transition: transform 0.5s cubic-bezier(0, 1, 0, 1);
+                              margin-left: 1rem;
+                        }
+                  }
+                  .answer{
+                        transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+                        max-height: 0;
+                        overflow: hidden;
+                        p{
+                              width: 95%;
+                              margin-bottom: 2rem;
+                        }
+                        .subtitle{
+                              h6{
+                                    color: $white;
+                                    font-size: 1.25rem;
+                                    text-transform: none;
+                                    font-family: $fontText;
+                                    padding-bottom: 2rem;
+                                    @include breakpoint(368){
+                                          font-size: 1.125rem;
+                                    }
+                              }
+                        }
+                  }
+            }
+      }
+      .button{
+            button{
+                  @include button;
+                  background: transparent;
+                  border: 2px solid $gold;
+                  border-radius: 3px;
+
+                  a{
+                        font-size: 1.5rem;
+                        color: $gold;
+                        font-family: $fontTitleReg;
+                        text-transform: lowercase;
+                        @include breakpoint(360){
+                              font-size: 1.25rem;
+                        }
+                  }
+
+                  &:hover{
+                        background: $gold;
+
+                        a{
+                              color: $grey;
+                        }
+                  }
+            }
+      }
+}
