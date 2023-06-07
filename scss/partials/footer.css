@@ -1,6 +1,6 @@
 footer {
-  background-color: #1b1b1b;
   width: 100%;
+  background: linear-gradient(to top, #191919, #1d1d1d);
   color: #ffffff;
   font-family: "Source Sans Pro";
   padding: 2rem 0;
@@ -14,17 +14,7 @@ footer .wrapper {
   gap: 2rem;
   margin: 0 auto;
 }
-footer .wrapper h4 {
-  font-family: "Gobold Regular";
-  font-size: 2.25rem;
-}
-@media (max-width: 400px) {
-  footer .wrapper h4 {
-    font-size: 1.75rem;
-  }
-}
 footer .wrapper nav ul {
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
@@ -32,7 +22,6 @@ footer .wrapper nav ul {
 }
 footer .wrapper nav ul li a {
   color: #ffffff;
-  text-decoration: none;
   font-size: 1rem;
 }
 footer .wrapper nav ul li a:hover {
@@ -60,10 +49,8 @@ footer .wrapper .socials li a:hover {
 footer .wrapper .socials li a i {
   font-size: 1.5rem;
 }
-footer .wrapper .credits {
-  font-size: 0.75rem;
-}
 footer .wrapper .credits p {
+  font-size: 0.75rem;
   text-align: center;
 }
 

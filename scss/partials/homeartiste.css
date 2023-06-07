@@ -1,10 +1,11 @@
 .home-artiste .bg {
-  width: 100%;
+  transition: opacity 0.5s ease-in-out;
   background-size: cover;
   background-position: center center;
 }
 .home-artiste .bg .wrapper {
   width: 66.6666666667vw;
+  margin: 0 auto;
 }
 @media (max-width: 768px) {
   .home-artiste .bg .wrapper {
@@ -24,9 +25,6 @@
   .home-artiste .bg .wrapper .list {
     padding: 3rem 0;
   }
-}
-.home-artiste .bg .wrapper .list ul {
-  list-style: none;
 }
 .home-artiste .bg .wrapper .list ul .active {
   transition: all 0.3s ease-in-out;
@@ -63,14 +61,14 @@
 }
 @media (max-width: 360px) {
   .home-artiste .bg .wrapper .list ul li a {
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
 }
 .home-artiste .bg .wrapper .list ul li:last-child {
   transition: all 0.1s ease-in-out;
 }
 .home-artiste .bg .wrapper .list ul li:last-child:hover {
-  transform: translateX(10px);
+  transform: translateX(5px);
 }
 .home-artiste .bg .wrapper .list ul li:last-child a {
   font-size: 1.25rem;
