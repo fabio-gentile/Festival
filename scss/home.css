@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap");
 @font-face {
   font-family: "Gobold Bold";
-  src: local("Gobold Bold"), url("../../fonts/gobold/Gobold Bold.woff") format("woff");
+  src: local("Gobold Bold"), url("../../fonts/gobold/Gobold_Bold.woff") format("woff");
 }
 @font-face {
   font-family: "Gobold Regular";
-  src: local("Gobold Regular"), url("../../fonts/gobold/Gobold Regular.woff") format("woff");
+  src: local("Gobold Regular"), url("../../fonts/gobold/Gobold_Regular.woff") format("woff");
 }
 * {
   margin: 0;
@@ -29,35 +29,6 @@ main {
   line-height: 140%;
 }
 
-p {
-  font-family: "Source Sans Pro";
-  font-size: 1.25rem;
-  color: #ffffff;
-}
-@media (max-width: 360px) {
-  p {
-    font-size: 1rem;
-  }
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Gobold Regular";
-  font-weight: bold;
-  color: #ffd700;
-  font-size: 2.25rem;
-  text-transform: lowercase;
-}
-@media (max-width: 768px) {
-  h1, h2, h3, h4, h5, h6 {
-    font-size: 1.875rem;
-  }
-}
-@media (max-width: 360px) {
-  h1, h2, h3, h4, h5, h6 {
-    font-size: 1.5rem;
-  }
-}
-
 a {
   text-decoration: none;
 }
@@ -73,11 +44,10 @@ ul, li {
   background-repeat: no-repeat;
   height: 80vh;
   width: 100%;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  position: relative;
 }
 .home-bg::after {
   content: "";
@@ -90,17 +60,27 @@ ul, li {
   position: absolute;
 }
 .home-bg .date {
-  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  z-index: 1;
 }
 .home-bg .date h3 {
-  font-size: 3rem;
-  text-transform: lowercase;
   color: #ffffff;
+  text-transform: lowercase;
   text-align: center;
+  font-size: 3rem;
+  font-family: "Gobold Regular";
+  letter-spacing: 1px;
 }
-@media (max-width: 450px) {
+@media (max-width: 768px) {
   .home-bg .date h3 {
     font-size: 2rem;
+  }
+}
+@media (max-width: 480px) {
+  .home-bg .date h3 {
+    font-size: 1.5rem;
   }
 }
 
@@ -125,6 +105,7 @@ section .home-marquee .scroll {
   display: flex;
   padding: 1rem 0 1rem 0;
   font-family: "Gobold Regular";
+  letter-spacing: 1px;
   white-space: nowrap;
 }
 section .home-marquee .scroll span {
@@ -132,12 +113,12 @@ section .home-marquee .scroll span {
   align-items: center;
   font-size: 1.5rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   section .home-marquee .scroll span {
     font-size: 1.25rem;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 768px) {
   section .home-marquee .scroll span {
     font-size: 1.125rem;
   }
@@ -154,59 +135,96 @@ section .home-marquee .scroll i {
     padding: 4rem 0;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 480px) {
   .home-pres {
     padding: 3rem 0;
   }
 }
 .home-pres .wrapper {
   display: flex;
-  height: 100%;
+  justify-content: space-between;
+  align-items: center;
   width: 1200px;
   margin: 0 auto;
+}
+@media (max-width: 815px) {
+  .home-pres .wrapper {
+    justify-content: center;
+  }
 }
 @media (max-width: 1250px) {
   .home-pres .wrapper {
     width: 90%;
   }
 }
-.home-pres .wrapper .text {
-  width: 40%;
-  display: flex;
+.home-pres .wrapper .container {
+  width: 30%;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 2rem;
 }
-@media (max-width: 1600px) {
-  .home-pres .wrapper .text {
+@media (max-width: 815px) {
+  .home-pres .wrapper .container {
     width: 50%;
   }
 }
-@media (max-width: 768px) {
-  .home-pres .wrapper .text {
+@media (max-width: 550px) {
+  .home-pres .wrapper .container {
+    width: 75%;
+  }
+}
+@media (max-width: 480px) {
+  .home-pres .wrapper .container {
     width: 100%;
   }
 }
-.home-pres .wrapper .text button a {
-  color: #ffd700;
+.home-pres .wrapper .container .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.home-pres .wrapper .container .text h4 {
+  font-size: 2.25rem;
   font-family: "Gobold Regular";
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  color: #ffd700;
 }
-.home-pres .wrapper .text p {
-  width: 50%;
+@media (max-width: 1024px) {
+  .home-pres .wrapper .container .text h4 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .home-pres .wrapper .container .text h4 {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 480px) {
+  .home-pres .wrapper .container .text h4 {
+    font-size: 1.5rem;
+  }
+}
+.home-pres .wrapper .container .text button a {
+  color: #ffd700;
+}
+.home-pres .wrapper .container .text p {
   text-align: center;
+  font-size: 1.125rem;
+  font-family: "Source Sans Pro";
+  color: #ffffff;
 }
-@media (max-width: 1600px) {
-  .home-pres .wrapper .text p {
-    width: 60%;
+@media (max-width: 768px) {
+  .home-pres .wrapper .container .text p {
+    font-size: 1rem;
   }
 }
-@media (max-width: 900px) {
-  .home-pres .wrapper .text p {
-    width: 80%;
+@media (max-width: 480px) {
+  .home-pres .wrapper .container .text p {
+    font-size: 0.875rem;
   }
 }
-.home-pres .wrapper .text button {
+.home-pres .wrapper .container .text button {
   width: fit-content;
   border: none;
   outline: none;
@@ -216,45 +234,45 @@ section .home-marquee .scroll i {
   border: 2px solid #ffd700;
   border-radius: 3px;
 }
-.home-pres .wrapper .text button a {
+.home-pres .wrapper .container .text button a {
   text-decoration: none;
   text-transform: lowercase;
   text-align: center;
+  font-size: 1.75rem;
+  font-family: "Gobold Regular";
+  letter-spacing: 1px;
 }
-.home-pres .wrapper .text button:hover {
+@media (max-width: 1024px) {
+  .home-pres .wrapper .container .text button a {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .home-pres .wrapper .container .text button a {
+    font-size: 1.375rem;
+  }
+}
+.home-pres .wrapper .container .text button:hover {
   transition: all 0.2s ease-in-out;
   border: 2px solid transparent;
 }
-@media (max-width: 360px) {
-  .home-pres .wrapper .text button {
+@media (max-width: 480px) {
+  .home-pres .wrapper .container .text button {
     padding: 0.5rem 1rem;
   }
 }
-.home-pres .wrapper .text button a {
-  font-size: 1.5rem;
-}
-@media (max-width: 360px) {
-  .home-pres .wrapper .text button a {
-    font-size: 1.25rem;
-  }
-}
-.home-pres .wrapper .text button:hover {
+.home-pres .wrapper .container .text button:hover {
   background: #ffd700;
 }
-.home-pres .wrapper .text button:hover a {
+.home-pres .wrapper .container .text button:hover a {
   color: #1d1d1d;
 }
 .home-pres .wrapper .img {
   background: url("../img/home/stage.jpg") center bottom no-repeat;
   min-height: 25rem;
-  width: 50%;
+  width: 60%;
 }
-@media (max-width: 1600px) {
-  .home-pres .wrapper .img {
-    width: 50%;
-  }
-}
-@media (max-width: 768px) {
+@media (max-width: 815px) {
   .home-pres .wrapper .img {
     display: none;
   }
@@ -287,24 +305,19 @@ section .home-marquee .scroll i {
   width: 100%;
   min-height: 65vh;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1024px) {
   .home-video .wrapper iframe {
     min-height: 50vh;
   }
 }
-@media (max-width: 1100px) {
+@media (max-width: 768px) {
   .home-video .wrapper iframe {
     min-height: 40vh;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .home-video .wrapper iframe {
     min-height: 30vh;
-  }
-}
-@media (max-width: 360px) {
-  .home-video .wrapper iframe {
-    min-height: 20vh;
   }
 }
 

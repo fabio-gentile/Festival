@@ -1,11 +1,19 @@
 .home-artiste .bg {
   transition: opacity 0.5s ease-in-out;
   background-size: cover;
-  background-position: center center;
+  background-repeat: no-repeat;
+  background-position: center 20%;
+  height: 65vh;
+}
+@media (max-width: 1200px) {
+  .home-artiste .bg {
+    height: 50vh;
+  }
 }
 .home-artiste .bg .wrapper {
   width: 1200px;
   margin: 0 auto;
+  height: 100%;
 }
 @media (max-width: 1250px) {
   .home-artiste .bg .wrapper {
@@ -15,13 +23,16 @@
 .home-artiste .bg .wrapper .list {
   padding: 5rem 0;
   font-family: "Gobold Regular";
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 @media (max-width: 768px) {
   .home-artiste .bg .wrapper .list {
     padding: 4rem 0;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 480px) {
   .home-artiste .bg .wrapper .list {
     padding: 3rem 0;
   }
@@ -35,31 +46,23 @@
 }
 .home-artiste .bg .wrapper .list ul li {
   cursor: pointer;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
+  text-align: center;
   width: fit-content;
 }
-@media (max-width: 768px) {
-  .home-artiste .bg .wrapper .list ul li {
-    padding: 0.4rem 0.75rem;
-  }
-}
-@media (max-width: 360px) {
-  .home-artiste .bg .wrapper .list ul li {
-    padding: 0.3rem 0.5rem;
-  }
-}
 .home-artiste .bg .wrapper .list ul li a {
+  display: block;
   text-decoration: none;
   color: #ffffff;
   font-size: 1.5rem;
   text-transform: lowercase;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .home-artiste .bg .wrapper .list ul li a {
     font-size: 1.25rem;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 768px) {
   .home-artiste .bg .wrapper .list ul li a {
     font-size: 1.125rem;
   }
@@ -70,14 +73,21 @@
 .home-artiste .bg .wrapper .list ul li:last-child:hover {
   transform: translateX(5px);
 }
+.home-artiste .bg .wrapper .list ul li:last-child:hover a {
+  color: #ffd700;
+}
 .home-artiste .bg .wrapper .list ul li:last-child a {
   font-size: 1.25rem;
   text-decoration: underline;
-  color: #ffd700;
 }
-@media (max-width: 360px) {
+@media (max-width: 1024px) {
   .home-artiste .bg .wrapper .list ul li:last-child a {
-    font-size: 0.75rem;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .home-artiste .bg .wrapper .list ul li:last-child a {
+    font-size: 0.875rem;
   }
 }
 
@@ -117,4 +127,4 @@
   background-image: url("../../img/home/snoop.jpg");
 }
 
-/*# sourceMappingURL=homeartiste.css.map */
+/*# sourceMappingURL=home-artiste.css.map */

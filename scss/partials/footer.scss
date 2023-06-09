@@ -13,7 +13,11 @@ footer {
     @include flexCenter;
     flex-direction: column;
     gap: 2rem;
-    margin: 0 auto;
+    h4{
+      @include fontSize(subtitle);
+      letter-spacing: 1px;
+      font-family: $fontTitleReg;
+    }
 
     nav {
       ul {
@@ -25,7 +29,7 @@ footer {
         li {
           a {
             color: $white;
-            font-size: 1rem;
+            @include fontSize(text);
 
             &:hover {
               color: $gold;
@@ -54,7 +58,7 @@ footer {
           }
 
           i {
-            font-size: 1.5rem;
+            @include fontSize(subtitle);
           }
         }
       }

@@ -14,10 +14,20 @@
       rel="shortcut icon"
       type="image/x-icon"
     />
+    <link rel="preload"
+          href="../fonts/gobold/Gobold_Regular.woff"
+            as="font"
+            type="font/woff"
+            crossorigin />
+    <link rel="preload"
+          href="../fonts/gobold/Gobold_Bold.woff"
+          as="font"
+          type="font/woff"
+          crossorigin />
     <link href="../scss/partials/navbar.css" rel="stylesheet" />
     <link href="../scss/partials/footer.css" rel="stylesheet" />
-    <link href="../scss/partials/homeartiste.css" rel="stylesheet" />
-    <link href="../scss/partials/homefaq.css" rel="stylesheet" />
+    <link href="../scss/partials/home-artiste.css" rel="stylesheet" />
+    <link href="../scss/partials/home-faq.css" rel="stylesheet" />
     <link href="../scss/home.css" rel="stylesheet" />
     <link
       crossorigin="anonymous"
@@ -30,43 +40,45 @@
   </head>
   <body>
 <!--      navbar-->
-    <header>
-      <nav>
-        <div class="logo">Retro Rap Festival</div>
+  <header>
+    <nav class="nav">
+      <div class="wrapper">
+        <div class="nav-logo">Retro Rap Festival</div>
         <ul>
-          <li><a class="active" href="../pages/index.html">Home</a></li>
-          <li><a href="../pages/lineup.html">Line-up</a></li>
-          <li><a href="../pages/tickets.html">Tickets</a></li>
-          <li>
+          <li class="nav-link">
+            <a href="#home">Home</a>
+          </li>
+          <li class="nav-link">
+            <a href="./lineup.html">Line-up</a>
+          </li>
+          <li class="nav-link">
+            <a href="./tickets.html">Tickets</a>
+          </li>
+          <li class="nav-link">
+            <a href="./faq.html">FAQ</a>
+          </li>
+          <li class="nav-link">
+            <a href="./partenaires.html">Partenaires</a>
+          </li>
+          <li class="nav-link">
+            <a href="./contact.html">Contact</a>
+          </li>
+          <li class="nav-link">
             <div class="burger">
-              <div class="bar"></div>
-              <div class="bar"></div>
-              <div class="bar"></div>
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
           </li>
         </ul>
-      </nav>
-      <div class="menu">
-        <ul>
-          <li><a href="../pages/index.html">Home</a></li>
-          <li><a href="../pages/lineup.html">Line-up</a></li>
-          <li><a href="../pages/tickets.html">Tickets</a></li>
-          <li><a href="../pages/faq.html">FAQ</a></li>
-          <li><a href="../pages/partenaires.html">Partenaires</a></li>
-          <li><a href="../pages/contact.html">Contact</a></li>
-        </ul>
-        <div class="burger">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </div>
       </div>
-      <script src="../js/navbar.js"></script>
-    </header>
+    </nav>
+  </header>
+  <script src="../js/navbar.js"></script>
     <main>
 <!--      bg home-->
       <section>
-        <div class="home-bg">
+        <div class="home-bg" id="home">
           <div class="date">
             <h3>15-16 juillet 2023</h3>
             <h3>bruxelles</h3>
@@ -89,17 +101,19 @@
          </a>
        </div>
      </section>
-      <script src="../js/homemarquee.js"></script>
+      <script src="../js/home-marquee.js"></script>
 <!--      presentation-->
       <section>
         <div class="home-pres">
           <div class="wrapper">
-            <div class="text">
-              <h4>3e édition</h4>
-              <p>Le Retro Rap Festival revient pour 2 journées avec les rappeurs américains les plus emblématiques </p>
-              <button>
-                <a href="../pages/tickets.html">Je réserve</a>
-              </button>
+            <div class="container">
+              <div class="text">
+                <h4>3e édition</h4>
+                <p>Le Retro Rap Festival revient pour 2 journées avec les rappeurs américains les plus emblématiques </p>
+                <button>
+                  <a href="../pages/tickets.html">Je réserve</a>
+                </button>
+              </div>
             </div>
             <div class="img"></div>
           </div>
@@ -127,7 +141,7 @@
             </div>
           </div>
         </div>
-        <script src="../js/homeartiste.js"></script>
+        <script src="../js/home-artiste.js"></script>
       </section>
 <!--      faq-->
       <section>
@@ -202,7 +216,7 @@
           </div>
         </div>
       </section>
-      <script src="../js/homefaq.js"></script>
+      <script src="../js/home-faq.js"></script>
 <!--      video-->
       <section>
         <div class="home-video">
@@ -217,7 +231,7 @@
         <h4>retro rap festival</h4>
         <nav>
           <ul>
-            <li><a href="../pages/index.html">Home</a></li>
+            <li><a href="#home">Home</a></li>
             <li><a href="../pages/lineup.html">Line-up</a></li>
             <li><a href="../pages/tickets.html">Tickets</a></li>
             <li><a href="../pages/faq.html">FAQ</a></li>

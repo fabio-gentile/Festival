@@ -4,12 +4,21 @@
       .bg{
             transition: opacity .5s ease-in-out;
             background-size: cover;
-            background-position: center center;
+            background-repeat: no-repeat;
+            background-position: center 20%;
+            height: 65vh;
+            @include breakpoint(1200){
+                  height: 50vh;
+            }
             .wrapper{
                   @include wrapper;
+                  height: 100%;
                   .list{
                         @include spaceSection;
                         font-family: $fontTitleReg;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
                         ul{
                               .active{
                                     transition: all .3s ease-in-out;
@@ -20,38 +29,27 @@
                               }
                               li{
                                     cursor: pointer;
-                                    padding: 0.5rem 1rem;
+                                    padding: .5rem;
+                                    text-align: center;
                                     width: fit-content;
-                                    @include breakpoint(768){
-                                          padding: 0.4rem .75rem;
-                                    }
-                                    @include breakpoint(360){
-                                          padding: 0.3rem .5rem;
-                                    }
                                     a{
+                                          display: block;
                                           text-decoration: none;
                                           color: $white;
-                                          font-size: 1.5rem;
+                                          @include fontSize(subtitle);
                                           text-transform: lowercase;
-                                          @include breakpoint(768){
-                                                font-size: 1.25rem;
-                                          }
-                                          @include breakpoint(360){
-                                                font-size: 1.125rem;
-                                          }
                                     }
                                     &:last-child {
                                           transition: all .1s ease-in-out;
                                           &:hover{
                                                 transform: translateX(5px);
+                                                a{
+                                                      color: $gold;
+                                                }
                                           }
                                           a{
-                                          font-size: 1.25rem;
+                                          @include fontSize(subtitle, -.25rem);
                                           text-decoration: underline;
-                                          color: $gold;
-                                                @include breakpoint(360){
-                                                      font-size: 0.75rem;
-                                                }
                                           }
                                     }
                               }

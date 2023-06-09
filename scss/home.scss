@@ -9,9 +9,8 @@
   background-repeat: no-repeat;
   height: 80vh;
   width: 100%;
-  @include flexCenter;
-  flex-direction: column;
   position: relative;
+  @include flexCenter;
 
   &::after {
     content: "";
@@ -24,19 +23,28 @@
     position: absolute;
   }
 
-  .date {
-    z-index: 3;
-
-    h3 {
-      font-size: 3rem;
-      text-transform: lowercase;
+  .date{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    z-index: 1;
+    h3{
       color: $white;
+      text-transform: lowercase;
       text-align: center;
-      @include breakpoint(450){
+      font-size: 3rem;
+      font-family: $fontTitleReg;
+      letter-spacing: 1px;
+      @include breakpoint(768){
         font-size: 2rem;
       }
+      @include breakpoint(480){
+        font-size: 1.5rem;
+      }
     }
+
   }
+
 }
 
 // marquee
@@ -62,17 +70,12 @@ section{
       display: flex;
       padding: 1rem 0 1rem 0;
       font-family: $fontTitleReg;
+      letter-spacing: 1px;
       white-space: nowrap;
       span{
         display: flex;
         align-items: center;
-        font-size: 1.5rem;
-        @include breakpoint(768){
-          font-size: 1.25rem;
-        }
-        @include breakpoint(360){
-          font-size: 1.125rem;
-        }
+        @include fontSize(subtitle);
       }
       i{
         margin: 0 1rem;
@@ -86,68 +89,59 @@ section{
   @include spaceSection;
   .wrapper{
     display: flex;
-    height: 100%;
+    justify-content: space-between;
+    @include breakpoint(815){
+      justify-content: center;
+    }
+    align-items: center;
     @include wrapper;
-    .text{
-      width: 40%;
-      @include flexCenter;
-      flex-direction: column;
-      gap: 2rem;
-
-      @include breakpoint(1600){
+    .container{
+      width: 30%;
+      align-items: center;
+      @include breakpoint(815){
         width: 50%;
       }
-      @include breakpoint(768){
+      @include breakpoint(550){
+        width: 75%;
+      }
+      @include breakpoint(480){
         width: 100%;
       }
-      button a{
-        color: $gold;
-        font-family: $fontTitleReg;
-      }
-
-      p{
-        width: 50%;
-        text-align: center;
-        @include breakpoint(1600){
-          width: 60%;
+      .text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        h4{
+          @include titleSection;
         }
-        @include breakpoint(900){
-          width: 80%;
+        button a{
+          color: $gold;
         }
-      }
-
-      button{
-        @include button;
-        background: transparent;
-        border: 2px solid $gold;
-        border-radius: 3px;
-
-        a{
-          font-size: 1.5rem;
-
-          @include breakpoint(360){
-            font-size: 1.25rem;
-          }
+        p{
+          text-align: center;
+          @include fontSize(text);
         }
-
-        &:hover{
-          background: $gold;
-
-          a{
-            color: $grey;
+        button{
+          @include button;
+          background: transparent;
+          border: 2px solid $gold;
+          border-radius: 3px;
+          &:hover{
+            background: $gold;
+            a{
+              color: $grey;
+            }
           }
         }
       }
     }
-
     .img{
       background: url("../img/home/stage.jpg") center bottom no-repeat;
       min-height: 25rem;
-      width: 50%;
-      @include breakpoint(1600){
-        width: 50%;
-      }
-      @include breakpoint(768){
+      width: 60%;
+      @include breakpoint(815){
         display: none;
       }
     }
@@ -169,17 +163,14 @@ section{
       object-fit: cover;
       width: 100%;
       min-height: 65vh;
-      @include breakpoint(1400){
+      @include breakpoint(1024){
         min-height: 50vh;
       }
-      @include breakpoint(1100){
+      @include breakpoint(768){
         min-height: 40vh;
       }
-      @include breakpoint(768){
+      @include breakpoint(480){
         min-height: 30vh;
-      }
-      @include breakpoint(360){
-        min-height: 20vh;
       }
     }
   }

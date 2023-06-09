@@ -2,7 +2,7 @@
 @include init;
 
 header{
-      background-color: $greyDark;
+      @include gradientCol(bottom);
       width: 100%;
       font-family: $fontTitleReg;
       color: $white;
@@ -12,19 +12,18 @@ header{
       text-align: center;
       .nav{
             width: 100%;
-            height: 10vh;
+            height: $navBarHeight;
             display: flex;
             align-items: center;
-            transition: height 5s;
-            font-size: 2.25rem;
-            z-index: 90;
+            font-size: 1.5rem;
+            z-index: 99;
+            position: relative;
+            transition: height .5s ease-in-out;
+            opacity: 1;
             &.mobile{
                   width: 100vw;
-                  height: 100vh - 10vh;
-                  margin-top: 10vh;
-                  background: gold;
+                  height: 100vh;
                   z-index: 99;
-                  opacity: 1;
                   .wrapper{
                         width: 70%;
                         .nav-logo{
@@ -33,6 +32,7 @@ header{
                         ul{
                               display: flex;
                               flex-direction: column;
+                              align-items: flex-start;
                               text-align: left;
                               .nav-link{
                                     &:nth-last-child(4), &:nth-child(5){
@@ -42,6 +42,9 @@ header{
                                           position: absolute;
                                           top: 100px;
                                           right: 100px;
+                                    }
+                                    @include breakpoint(600){
+                                          display: flex;
                                     }
                               }
                         }
@@ -54,27 +57,35 @@ header{
                   justify-content: space-between;
                   .nav-logo{
                         width: fit-content;
+                        align-self: center;
                   }
                   ul{
                         display: flex;
+                        align-items: center;
                         gap: 2rem;
                         .nav-link{
                               a{
-                                    text-decoration: none;
                                     color: $white;
+                                    &:hover{
+                                          color: $gold;
+                                          transition: color .2s;
+                                    }
                               }
                               &:nth-last-child(4), &:nth-child(5){
                                     display: none;
                               }
                               .burger{
                                     cursor: pointer;
+                                    &:hover span{
+                                          background-color: $gold;
+                                    }
                                     span{
                                           width: 50px;
                                           height: 5px;
                                           background-color: #ecf0f1;
                                           display: block;
                                           margin: 8px auto;
-                                          transition: all 0.3s ease-in-out;
+                                          transition: transform 0.3s ease-in-out, background-color .2s;
                                     }
                                     &.active{
                                           span{
@@ -88,12 +99,17 @@ header{
                                                       transform: translateY(-13px) rotate(-45deg);
                                                 }
                                           }
+                                    }
+                              }
+                              @include breakpoint(600){
+                                    display: none;
 
+                                    &:last-child{
+                                          display: block;
                                     }
                               }
                         }
                   }
-
             }
       }
 }

@@ -6,22 +6,18 @@ $greyDark: #191919;
 $fontTitleBold: "Gobold Bold";
 $fontTitleReg: "Gobold Regular";
 $fontText: "Source Sans Pro";
-$navBarHeight: 90px;
-$fsTitle : 3rem;
-$fsSubtitle : 2rem;
-$fsText : 1.5rem;
-
+$navBarHeight: 10vh;
 @mixin init{
   @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap");
   @font-face {
     font-family: "Gobold Bold";
     src: local("Gobold Bold"),
-    url("../../fonts/gobold/Gobold Bold.woff") format("woff");
+    url("../../fonts/gobold/Gobold_Bold.woff") format("woff");
   }
   @font-face {
     font-family: "Gobold Regular";
     src: local("Gobold Regular"),
-    url("../../fonts/gobold/Gobold Regular.woff") format("woff");
+    url("../../fonts/gobold/Gobold_Regular.woff") format("woff");
   }
   * {
     margin: 0;
@@ -29,7 +25,7 @@ $fsText : 1.5rem;
     box-sizing: border-box;
     scroll-behavior: smooth;
   }
-  ::selection {
+  ::selection{
     color: $grey;
     background-color: rgba(255, 215, 0, 0.9);
   }
@@ -41,27 +37,6 @@ $fsText : 1.5rem;
     width: 100%;
     height: 100%;
     line-height: 140%;
-  }
-  p{
-    font-family: $fontText;
-    font-size: 1.25rem;
-    color: $white;
-    @include breakpoint(360){
-      font-size: 1rem;
-    }
-  }
-  h1, h2, h3, h4, h5, h6{
-    font-family: $fontTitleReg;
-    font-weight: bold;
-    color: $gold;
-    font-size: 2.25rem;
-    text-transform: lowercase;
-    @include breakpoint(768){
-      font-size: 1.875rem;
-    }
-    @include breakpoint(360){
-      font-size: 1.5rem;
-    }
   }
   a{
     text-decoration: none;
@@ -80,6 +55,49 @@ $fsText : 1.5rem;
   }
 }
 
+@mixin fontSize($type, $plus: 0){
+  @if $type == title{
+    font-size: 2.25rem + $plus;
+    font-family: $fontTitleReg;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    @include breakpoint(1024){
+      font-size: 2rem + $plus;
+    }
+    @include breakpoint(768){
+      font-size: 1.75rem + $plus;
+    }
+    @include breakpoint(480){
+      font-size: 1.5rem + $plus;
+    }
+  }
+  @if $type == subtitle{
+    font-size: 1.5rem + $plus;
+    @include breakpoint(1024){
+      font-size: 1.25rem + $plus;
+    }
+    @include breakpoint(768){
+      font-size: 1.125rem + $plus;
+    }
+  }
+  @if $type == text{
+    font-size: 1.125rem + $plus;
+    font-family: $fontText;
+    color: $white;
+    @include breakpoint(768){
+      font-size: 1rem + $plus;
+    }
+    @include breakpoint(480){
+      font-size: 0.875rem + $plus;
+    }
+  }
+}
+
+@mixin titleSection{
+  @include fontSize(title);
+  color: $gold;
+}
+
 @mixin flexCenter{
   display: flex;
   align-items: center;
@@ -96,13 +114,16 @@ $fsText : 1.5rem;
     text-decoration: none;
     text-transform: lowercase;
     text-align: center;
+    @include fontSize(subtitle, .25rem);
+    font-family: $fontTitleReg;
+    letter-spacing: 1px;
   }
 
   &:hover{
     transition: all .2s ease-in-out;
     border: 2px solid transparent;
   }
-  @include breakpoint(360){
+  @include breakpoint(480){
     padding: .5rem 1rem;
   }
 }
@@ -112,7 +133,7 @@ $fsText : 1.5rem;
   @include breakpoint(768){
     padding: 4rem 0;
   }
-  @include breakpoint(360){
+  @include breakpoint(480){
     padding: 3rem 0;
   }
 }
