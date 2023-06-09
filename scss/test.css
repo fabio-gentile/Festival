@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap");
+@font-face {
+  font-family: "Gobold Bold";
+  src: local("Gobold Bold"), url("../../fonts/gobold/Gobold Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Gobold Regular";
+  src: local("Gobold Regular"), url("../../fonts/gobold/Gobold Regular.woff") format("woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+::selection {
+  color: #1d1d1d;
+  background-color: rgba(255, 215, 0, 0.9);
+}
+
+main {
+  background-image: url("../../img/background.svg");
+  background-color: #1d1d1d;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  line-height: 140%;
+}
+
+p {
+  font-family: "Source Sans Pro";
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+@media (max-width: 360px) {
+  p {
+    font-size: 1rem;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Gobold Regular";
+  font-weight: bold;
+  color: #ffd700;
+  font-size: 2.25rem;
+  text-transform: lowercase;
+}
+@media (max-width: 768px) {
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 1.875rem;
+  }
+}
+@media (max-width: 360px) {
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 1.5rem;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+header {
+  background-color: #191919;
+  width: 100%;
+  font-family: "Gobold Regular";
+  color: #ffffff;
+  text-transform: lowercase;
+  overflow: hidden;
+  position: fixed;
+  text-align: center;
+}
+header .nav {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  transition: height 5s;
+  font-size: 2.25rem;
+  z-index: 90;
+}
+header .nav.mobile {
+  width: 100vw;
+  height: 90vh;
+  margin-top: 10vh;
+  background: gold;
+  z-index: 99;
+  opacity: 1;
+}
+header .nav.mobile .wrapper {
+  width: 70%;
+}
+header .nav.mobile .wrapper .nav-logo {
+  display: none;
+}
+header .nav.mobile .wrapper ul {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+header .nav.mobile .wrapper ul .nav-link:nth-last-child(4), header .nav.mobile .wrapper ul .nav-link:nth-child(5) {
+  display: flex;
+}
+header .nav.mobile .wrapper ul .nav-link .burger {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+}
+header .nav .wrapper {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+header .nav .wrapper .nav-logo {
+  width: fit-content;
+}
+header .nav .wrapper ul {
+  display: flex;
+  gap: 2rem;
+}
+header .nav .wrapper ul .nav-link a {
+  text-decoration: none;
+  color: #ffffff;
+}
+header .nav .wrapper ul .nav-link:nth-last-child(4), header .nav .wrapper ul .nav-link:nth-child(5) {
+  display: none;
+}
+header .nav .wrapper ul .nav-link .burger {
+  cursor: pointer;
+}
+header .nav .wrapper ul .nav-link .burger span {
+  width: 50px;
+  height: 5px;
+  background-color: #ecf0f1;
+  display: block;
+  margin: 8px auto;
+  transition: all 0.3s ease-in-out;
+}
+header .nav .wrapper ul .nav-link .burger.active span:nth-child(2) {
+  opacity: 0;
+}
+header .nav .wrapper ul .nav-link .burger.active span:nth-child(1) {
+  transform: translateY(13px) rotate(45deg);
+}
+header .nav .wrapper ul .nav-link .burger.active span:nth-child(3) {
+  transform: translateY(-13px) rotate(-45deg);
+}
+
+/*# sourceMappingURL=test.css.map */
