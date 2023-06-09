@@ -26,6 +26,7 @@ main {
   background-size: cover;
   width: 100%;
   height: 100%;
+  line-height: 140%;
 }
 
 p {
@@ -161,8 +162,13 @@ section .home-marquee .scroll i {
 .home-pres .wrapper {
   display: flex;
   height: 100%;
-  width: 83.3333333333vw;
+  width: 1200px;
   margin: 0 auto;
+}
+@media (max-width: 1250px) {
+  .home-pres .wrapper {
+    width: 90%;
+  }
 }
 .home-pres .wrapper .text {
   width: 40%;
@@ -268,12 +274,12 @@ section .home-marquee .scroll i {
   }
 }
 .home-video .wrapper {
-  width: 66.6666666667vw;
+  width: 1200px;
   margin: 0 auto;
 }
-@media (max-width: 768px) {
+@media (max-width: 1250px) {
   .home-video .wrapper {
-    width: 83.3333333333vw;
+    width: 90%;
   }
 }
 .home-video .wrapper iframe {

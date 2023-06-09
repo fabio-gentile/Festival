@@ -20,12 +20,12 @@
   text-align: center;
 }
 .home-faq .wrapper {
-  width: 66.6666666667vw;
+  width: 1200px;
   margin: 0 auto;
 }
-@media (max-width: 768px) {
+@media (max-width: 1250px) {
   .home-faq .wrapper {
-    width: 83.3333333333vw;
+    width: 90%;
   }
 }
 .home-faq .wrapper .question {

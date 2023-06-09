@@ -4,12 +4,12 @@
   background-position: center center;
 }
 .home-artiste .bg .wrapper {
-  width: 66.6666666667vw;
+  width: 1200px;
   margin: 0 auto;
 }
-@media (max-width: 768px) {
+@media (max-width: 1250px) {
   .home-artiste .bg .wrapper {
-    width: 83.3333333333vw;
+    width: 90%;
   }
 }
 .home-artiste .bg .wrapper .list {

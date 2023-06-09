@@ -6,13 +6,19 @@ footer {
   padding: 2rem 0;
 }
 footer .wrapper {
-  width: 90%;
+  width: 1200px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 2rem;
   margin: 0 auto;
+}
+@media (max-width: 1250px) {
+  footer .wrapper {
+    width: 90%;
+  }
 }
 footer .wrapper nav ul {
   display: flex;
