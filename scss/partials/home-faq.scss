@@ -58,7 +58,7 @@
                         .subtitle{
                               h6{
                                     color: $white;
-                                    @include fontSize(subtitle, -.125rem);
+                                    @include fontSize(subtitle);
                                     text-transform: none;
                                     font-family: $fontText;
                                     padding-bottom: 2rem;

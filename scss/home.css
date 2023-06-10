@@ -66,21 +66,30 @@ ul, li {
   z-index: 1;
 }
 .home-bg .date h3 {
-  color: #ffffff;
-  text-transform: lowercase;
-  text-align: center;
-  font-size: 3rem;
   font-family: "Gobold Regular";
   letter-spacing: 1px;
+  font-size: 3rem;
+  font-family: "Gobold Regular";
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #ffd700;
+  text-transform: lowercase;
+  color: #ffffff;
+}
+@media (max-width: 1024px) {
+  .home-bg .date h3 {
+    font-size: 2.75rem;
+  }
 }
 @media (max-width: 768px) {
   .home-bg .date h3 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 @media (max-width: 480px) {
   .home-bg .date h3 {
-    font-size: 1.5rem;
+    font-size: 2.25rem;
   }
 }
 
@@ -184,11 +193,15 @@ section .home-marquee .scroll i {
   gap: 2rem;
 }
 .home-pres .wrapper .container .text h4 {
+  font-family: "Gobold Regular";
+  letter-spacing: 1px;
   font-size: 2.25rem;
   font-family: "Gobold Regular";
   text-transform: lowercase;
   letter-spacing: 1px;
+  text-align: center;
   color: #ffd700;
+  text-transform: lowercase;
 }
 @media (max-width: 1024px) {
   .home-pres .wrapper .container .text h4 {
@@ -214,14 +227,9 @@ section .home-marquee .scroll i {
   font-family: "Source Sans Pro";
   color: #ffffff;
 }
-@media (max-width: 768px) {
-  .home-pres .wrapper .container .text p {
-    font-size: 1rem;
-  }
-}
 @media (max-width: 480px) {
   .home-pres .wrapper .container .text p {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
 }
 .home-pres .wrapper .container .text button {

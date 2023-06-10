@@ -29,18 +29,8 @@
     gap: 2rem;
     z-index: 1;
     h3{
+      @include titleSection(.75rem);
       color: $white;
-      text-transform: lowercase;
-      text-align: center;
-      font-size: 3rem;
-      font-family: $fontTitleReg;
-      letter-spacing: 1px;
-      @include breakpoint(768){
-        font-size: 2rem;
-      }
-      @include breakpoint(480){
-        font-size: 1.5rem;
-      }
     }
 
   }

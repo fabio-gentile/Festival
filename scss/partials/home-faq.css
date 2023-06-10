@@ -17,11 +17,15 @@
   }
 }
 .home-faq h4 {
+  font-family: "Gobold Regular";
+  letter-spacing: 1px;
   font-size: 2.25rem;
   font-family: "Gobold Regular";
   text-transform: lowercase;
   letter-spacing: 1px;
+  text-align: center;
   color: #ffd700;
+  text-transform: lowercase;
 }
 @media (max-width: 1024px) {
   .home-faq h4 {
@@ -115,31 +119,26 @@
   font-family: "Source Sans Pro";
   color: #ffffff;
 }
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .home-faq .wrapper .question .answer p {
     font-size: 1rem;
   }
 }
-@media (max-width: 480px) {
-  .home-faq .wrapper .question .answer p {
-    font-size: 0.875rem;
-  }
-}
 .home-faq .wrapper .question .answer .subtitle h6 {
   color: #ffffff;
-  font-size: 1.375rem;
+  font-size: 1.5rem;
   text-transform: none;
   font-family: "Source Sans Pro";
   padding-bottom: 2rem;
 }
 @media (max-width: 1024px) {
   .home-faq .wrapper .question .answer .subtitle h6 {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
   }
 }
 @media (max-width: 768px) {
   .home-faq .wrapper .question .answer .subtitle h6 {
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
 }
 .home-faq .button button {

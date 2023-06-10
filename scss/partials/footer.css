@@ -46,14 +46,9 @@ footer .wrapper nav ul li a {
   font-family: "Source Sans Pro";
   color: #ffffff;
 }
-@media (max-width: 768px) {
-  footer .wrapper nav ul li a {
-    font-size: 1rem;
-  }
-}
 @media (max-width: 480px) {
   footer .wrapper nav ul li a {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
 }
 footer .wrapper nav ul li a:hover {

@@ -55,6 +55,15 @@ $navBarHeight: 10vh;
   }
 }
 
+@mixin titleSection($fontSize: 0){
+  font-family: $fontTitleReg;
+  letter-spacing: 1px;
+  @include fontSize(title, $fontSize);
+  text-align: center;
+  color: $gold;
+  text-transform: lowercase;
+}
+
 @mixin fontSize($type, $plus: 0){
   @if $type == title{
     font-size: 2.25rem + $plus;
@@ -84,18 +93,10 @@ $navBarHeight: 10vh;
     font-size: 1.125rem + $plus;
     font-family: $fontText;
     color: $white;
-    @include breakpoint(768){
+    @include breakpoint(480){
       font-size: 1rem + $plus;
     }
-    @include breakpoint(480){
-      font-size: 0.875rem + $plus;
-    }
   }
-}
-
-@mixin titleSection{
-  @include fontSize(title);
-  color: $gold;
 }
 
 @mixin flexCenter{
