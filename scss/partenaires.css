@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap");
+@font-face {
+  font-family: "Gobold Bold";
+  src: local("Gobold Bold"), url("../../fonts/gobold/Gobold_Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Gobold Regular";
+  src: local("Gobold Regular"), url("../../fonts/gobold/Gobold_Regular.woff") format("woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+main {
+  background-image: url("../../img/background.svg");
+  background-color: #1d1d1d;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  line-height: 150%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+#partenaires {
+  padding-top: 15vh;
+}
+#partenaires .wrapper {
+  width: 900px;
+  margin: 0 auto;
+}
+@media (max-width: 950px) {
+  #partenaires .wrapper {
+    width: 90%;
+  }
+}
+#partenaires .wrapper h3 {
+  font-family: "Gobold Regular";
+  letter-spacing: 1px;
+  font-size: 2.25rem;
+  font-family: "Gobold Regular";
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  line-height: 160%;
+  text-align: center;
+  color: #ffd700;
+  text-transform: lowercase;
+  height: 100%;
+}
+@media (max-width: 768px) {
+  #partenaires .wrapper h3 {
+    font-size: 2rem;
+  }
+}
+#partenaires .wrapper .container {
+  padding: 5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  #partenaires .wrapper .container {
+    padding: 4rem 0;
+  }
+}
+@media (max-width: 480px) {
+  #partenaires .wrapper .container {
+    padding: 3rem 0;
+  }
+}
+@media (max-width: 900px) {
+  #partenaires .wrapper .container {
+    gap: 2rem;
+  }
+}
+#partenaires .wrapper .container .box {
+  background-color: #ffffff;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#partenaires .wrapper .container .box a {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+#partenaires .wrapper .container .box .logo {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 150px;
+  height: 150px;
+}
+#partenaires .wrapper .container .box:hover {
+  cursor: pointer;
+}
+
+.dhl {
+  background-image: url("../img/partenaire/dhl.svg");
+}
+
+.jbl {
+  background-image: url("../img/partenaire/jbl.svg");
+}
+
+.mastercard {
+  background-image: url("../img/partenaire/mastercard.svg");
+}
+
+.pirelli {
+  background-image: url("../img/partenaire/pirelli.svg");
+}
+
+.prada {
+  background-image: url("../img/partenaire/prada.svg");
+}
+
+.samsung {
+  background-image: url("../img/partenaire/samsung.svg");
+}
+
+.spotify {
+  background-image: url("../img/partenaire/spotify.svg");
+}
+
+/*# sourceMappingURL=partenaires.css.map */
