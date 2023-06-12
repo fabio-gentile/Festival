@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+            name="viewport"
+    />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <link rel="preload"
+          href="../fonts/gobold/Gobold_Regular.woff"
+          as="font"
+          type="font/woff"
+          crossorigin />
+    <link rel="preload"
+          href="../fonts/gobold/Gobold_Bold.woff"
+          as="font"
+          type="font/woff"
+          crossorigin />
+    <meta name="author" content="Fabio Gentile" />
+    <meta name="title" content="Retro Rap Festival Contact" />
+    <meta name="description" content="Nous contacter" />
+    <meta property="og:title" content="Retro Rap Festival Contact" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="Nous contacter" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:site_name" content="Retro Rap Festival" />
+    <link
+            href="../img/favicon-32x32.png"
+            rel="shortcut icon"
+            type="image/x-icon"
+    />
+    <link href="../scss/partials/navbar.css" rel="stylesheet" />
+    <link href="../scss/partials/footer.css" rel="stylesheet" />
+    <link href="../scss/contact.css" rel="stylesheet" />
+    <link
+            crossorigin="anonymous"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            referrerpolicy="no-referrer"
+            rel="stylesheet"
+    />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <title>Partenaires - Retro Rap Festival</title>
+</head>
+<body>
+<!--      navbar-->
+<header>
+    <nav class="nav">
+        <div class="wrapper">
+            <div class="nav-logo">Retro Rap Festival</div>
+            <ul>
+                <li class="nav-link">
+                    <a href="./index.html">Home</a>
+                </li>
+                <li class="nav-link">
+                    <a href="./lineup.html">Line-up</a>
+                </li>
+                <li class="nav-link">
+                    <a href="./tickets.html">Tickets</a>
+                </li>
+                <li class="nav-link">
+                    <a href="./faq.html">FAQ</a>
+                </li>
+                <li class="nav-link">
+                    <a href="./partenaires.html">Partenaires</a>
+                </li>
+                <li class="nav-link">
+                    <a href="./contact.html">Contact</a>
+                </li>
+                <li class="nav-link">
+                    <div class="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<script src="../js/navbar.js"></script>
+<main>
+    <section id="contact">
+        <div class="wrapper">
+            <h3>Contact</h3>
+            <div class="container">
+                <div class="info">
+                    <div class="email">
+                        <a href="mailto:#">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>retrorapfestival@contact.be</p>
+                        </a>
+                    </div>
+                    <div class="phone">
+                        <a href="tel:#">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>+32.496.12.34.56</p>
+                        </a>
+                    </div>
+                </div>
+                <p>Ou via le formulaire ci-dessous</p>
+                <div class="form">
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <input type="text" name="name" id="name" required>
+                            <label for="name">Nom</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" required>
+                            <label for="email">Adresse email</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="message" required></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                        <div class="submit">
+                            <input type="submit" value="ENVOYER">
+                            <div class="captcha">
+                                <div class="g-recaptcha" data-sitekey="6LfkU48mAAAAAI1EpylGjpMgO0gzCWv9Xm31mZXA"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="wrapper">
+        <h4>retro rap festival</h4>
+        <nav>
+            <ul>
+                <li><a href="../pages/index.html">Home</a></li>
+                <li><a href="../pages/lineup.html">Line-up</a></li>
+                <li><a href="../pages/tickets.html">Tickets</a></li>
+                <li><a href="../pages/faq.html">FAQ</a></li>
+                <li><a href="../pages/partenaires.html">Partenaires</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="socials">
+            <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+        </div>
+        <div class="credits">
+            <p>
+                Copyright &copy 2023 • Retro Rap Festival. Bruxelles — Tous droits
+                réservés
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
