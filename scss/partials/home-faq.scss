@@ -8,64 +8,8 @@
             @include titleSection;
       }
       .wrapper{
-            @include wrapper;
-            .question{
-                  padding: 2rem 0 0;
-                  border-bottom: $white 1px solid;
-                  &.active{
-                        .title i{
-                              transform: rotate(180deg);
-                        }
-                        .answer{
-                              max-height: 2000px;
-                              transition: max-height .6s ease-in-out;
-                        }
-                  }
-                  .title{
-                        cursor: pointer;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        padding-bottom: 2.5rem;
-                        h6{
-                              font-family: $fontText;
-                              font-weight: bold;
-                              @include fontSize(subtitle, -.125rem);
-                        }
-                        h4{
-                              font-family: $fontText;
-                              text-transform: initial;
-                        }
-                        h4, i{
-                              color: $white;
-                              @include fontSize(subtitle, .125rem);
-                              font-weight: bold;
-                        }
-                        i{
-                              transition: transform 0.5s cubic-bezier(0, 1, 0, 1);
-                              margin-left: 1rem;
-                        }
-                  }
-                  .answer{
-                        transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
-                        max-height: 0;
-                        overflow: hidden;
-                        p{
-                              width: 95%;
-                              margin-bottom: 2rem;
-                              @include fontSize(text);
-                        }
-                        .subtitle{
-                              h6{
-                                    color: $white;
-                                    @include fontSize(subtitle);
-                                    text-transform: none;
-                                    font-family: $fontText;
-                                    padding-bottom: 2rem;
-                              }
-                        }
-                  }
-            }
+            @include wrapper();
+            @import "faq-part";
       }
       .button{
             button{

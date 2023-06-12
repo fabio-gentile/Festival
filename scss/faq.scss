@@ -1,0 +1,15 @@
+@import "./partials/config";
+@include init;
+@import "./partials/home-faq";
+
+#faq{
+      @include spaceNav;
+      .wrapper{
+            @include wrapper();
+            h3{
+                  @include titleSection();
+            }
+            @import "partials/faq-part";
+      }
+}
+

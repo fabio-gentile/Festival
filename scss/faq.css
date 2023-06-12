@@ -1,3 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap");
+@font-face {
+  font-family: "Gobold Bold";
+  src: local("Gobold Bold"), url("../../fonts/gobold/Gobold_Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Gobold Regular";
+  src: local("Gobold Regular"), url("../../fonts/gobold/Gobold_Regular.woff") format("woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url("../../img/background.svg");
+  background-color: #1d1d1d;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  line-height: 150%;
+}
+
+main {
+  min-height: 90vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
 .home-faq {
   padding: 5rem 0;
   display: flex;
@@ -180,4 +218,125 @@
   color: #1d1d1d;
 }
 
-/*# sourceMappingURL=home-faq.css.map */
+#faq {
+  padding-top: 15vh;
+}
+#faq .wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 1250px) {
+  #faq .wrapper {
+    width: 90%;
+  }
+}
+#faq .wrapper h3 {
+  font-family: "Gobold Regular";
+  letter-spacing: 1px;
+  font-size: 2.25rem;
+  font-family: "Gobold Regular";
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  line-height: 160%;
+  text-align: center;
+  color: #ffd700;
+  text-transform: lowercase;
+}
+@media (max-width: 768px) {
+  #faq .wrapper h3 {
+    font-size: 2rem;
+  }
+}
+#faq .wrapper .question {
+  padding: 2rem 0 0;
+  border-bottom: #ffffff 1px solid;
+}
+#faq .wrapper .question.active .title i {
+  transform: rotate(180deg);
+}
+#faq .wrapper .question.active .answer {
+  max-height: 2000px;
+  transition: max-height 0.6s ease-in-out;
+}
+#faq .wrapper .question .title {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2.5rem;
+}
+#faq .wrapper .question .title h6 {
+  font-family: "Source Sans Pro";
+  font-weight: bold;
+  font-size: 1.375rem;
+}
+@media (max-width: 1024px) {
+  #faq .wrapper .question .title h6 {
+    font-size: 1.125rem;
+  }
+}
+@media (max-width: 768px) {
+  #faq .wrapper .question .title h6 {
+    font-size: 1rem;
+  }
+}
+#faq .wrapper .question .title h4 {
+  font-family: "Source Sans Pro";
+  text-transform: initial;
+  text-align: left;
+}
+#faq .wrapper .question .title h4, #faq .wrapper .question .title i {
+  color: #ffffff;
+  font-size: 1.625rem;
+  font-weight: bold;
+}
+@media (max-width: 1024px) {
+  #faq .wrapper .question .title h4, #faq .wrapper .question .title i {
+    font-size: 1.375rem;
+  }
+}
+@media (max-width: 768px) {
+  #faq .wrapper .question .title h4, #faq .wrapper .question .title i {
+    font-size: 1.25rem;
+  }
+}
+#faq .wrapper .question .title i {
+  transition: transform 0.5s cubic-bezier(0, 1, 0, 1);
+  margin-left: 1rem;
+}
+#faq .wrapper .question .answer {
+  transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+  max-height: 0;
+  overflow: hidden;
+}
+#faq .wrapper .question .answer p {
+  width: 95%;
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
+  font-family: "Source Sans Pro";
+  color: #ffffff;
+}
+@media (max-width: 480px) {
+  #faq .wrapper .question .answer p {
+    font-size: 1rem;
+  }
+}
+#faq .wrapper .question .answer .subtitle h6 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-transform: none;
+  font-family: "Source Sans Pro";
+  padding-bottom: 2rem;
+}
+@media (max-width: 1024px) {
+  #faq .wrapper .question .answer .subtitle h6 {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 768px) {
+  #faq .wrapper .question .answer .subtitle h6 {
+    font-size: 1.125rem;
+  }
+}
+
+/*# sourceMappingURL=faq.css.map */

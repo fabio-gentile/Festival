@@ -1,6 +1,6 @@
-const questions = document.querySelectorAll('.home-faq .wrapper .question .title')
+const questions = document.querySelectorAll('.wrapper .question .title')
 
-questions.forEach((element, index) => {
+questions.forEach((element) => {
     element.addEventListener('click', () => {
         element.parentElement.classList.toggle('active')
         const title = element.querySelector('.title')
