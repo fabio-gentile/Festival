@@ -7,13 +7,6 @@
             name="viewport"
     />
     <meta content="ie=edge" http-equiv="X-UA-Compatible" />
-    <meta content="Fabio Gentile" name="author" />
-    <meta content="Retro Rap Festival 2023 - Partenaires" name="description" />
-    <link
-            href="../img/favicon-32x32.png"
-            rel="shortcut icon"
-            type="image/x-icon"
-    />
     <link rel="preload"
           href="../fonts/gobold/Gobold_Regular.woff"
           as="font"
@@ -24,8 +17,23 @@
           as="font"
           type="font/woff"
           crossorigin />
+    <meta name="author" content="Fabio Gentile" />
+    <meta name="title" content="Retro Rap Festival Partenaires" />
+    <meta name="description" content="Le Retro Rap Festival revient pour 2 journées avec les rappeurs américains les plus emblématiques" />
+    <meta property="og:title" content="Retro Rap Festival Partenaires" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="Partenaires du Retro Rap Festival" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:site_name" content="Retro Rap Festival" />
+    <link
+            href="../img/favicon-32x32.png"
+            rel="shortcut icon"
+            type="image/x-icon"
+    />
     <link href="../scss/partials/navbar.css" rel="stylesheet" />
     <link href="../scss/partials/footer.css" rel="stylesheet" />
+    <link href="../scss/partenaires.css" rel="stylesheet" />
     <link
             crossorigin="anonymous"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -33,7 +41,7 @@
             referrerpolicy="no-referrer"
             rel="stylesheet"
     />
-    <title>Accueil - Retro Rap Festival</title>
+    <title>Partenaires - Retro Rap Festival</title>
 </head>
 <body>
 <!--      navbar-->
@@ -73,6 +81,20 @@
 </header>
 <script src="../js/navbar.js"></script>
 <main>
+    <section id="partenaires">
+        <div class="wrapper">
+            <h3>Partenaires</h3>
+            <div class="container">
+                <div class="box"><a href="https://fr.jbl.com/" target="_blank"></a><div class="logo jbl"></div></div>
+                <div class="box"><a href="https://www.dhl.com/be-fr/home.html" target="_blank"></a><div class="logo dhl"></div></div>
+                <div class="box"><a href="https://www.mastercard.be/fr-be.html/" target="_blank"></a><div class="logo mastercard"></div></div>
+                <div class="box"><a href="https://www.samsung.com/be_fr/" target="_blank"></a><div class="logo samsung"></div></div>
+                <div class="box"><a href="https://www.prada.com/be/fr.html" target="_blank"></a><div class="logo prada"></div></div>
+                <div class="box"><a href="https://open.spotify.com/" target="_blank"></a><div class="logo spotify"></div></div>
+                <div class="box"><a href="https://www.pirelli.com/tyres/fr-be/auto/homepage/" target="_blank"></a><div class="logo pirelli"></div></div>
+            </div>
+        </div>
+    </section>
 </main>
 <footer>
     <div class="wrapper">
@@ -83,7 +105,7 @@
                 <li><a href="../pages/lineup.html">Line-up</a></li>
                 <li><a href="../pages/tickets.html">Tickets</a></li>
                 <li><a href="../pages/faq.html">FAQ</a></li>
-                <li><a href="../pages/partenaires.html">Partenaires</a></li>
+                <li><a href="#partenaires">Partenaires</a></li>
                 <li><a href="../pages/contact.html">Contact</a></li>
             </ul>
         </nav>

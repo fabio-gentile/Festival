@@ -7,7 +7,6 @@
             @include wrapper(-300);
             h3{
                   @include titleSection();
-                  height: 100%;
             }
             .container{
                   @include spaceSection;
