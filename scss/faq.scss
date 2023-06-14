@@ -1,6 +1,5 @@
 @import "./partials/config";
 @include init;
-@import "./partials/home-faq";
 
 #faq{
       @include spaceNav;
@@ -9,7 +8,34 @@
             h3{
                   @include titleSection();
             }
-            @import "partials/faq-part";
+            .container{
+                  @include spaceSection;
+                  .question:nth-child(1){
+                  margin-top: -2rem;
+
+                  }
+                  @import "partials/faq-part";
+                  .more{
+                        margin-top: 2.25rem;
+                        @include fontSize(title);
+                        color: $white;
+                        font-weight: bold;
+                        text-transform: none;
+                        font-family: $fontText;
+                        text-align: center;
+                        @include breakpoint(576){
+                              font-size: 2rem;
+                        }
+                        @include breakpoint(360){
+                              font-size: 1.5rem;
+                        }
+                  }
+
+            }
+            @include button();
+            .button{
+                  margin-top: 2.25rem;
+            }
       }
 }
 

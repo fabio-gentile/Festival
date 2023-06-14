@@ -31,7 +31,7 @@ header{
         width: 60%;
         font-size: 3rem;
         @include breakpoint(500){
-          width: 90%;
+          width: 80%;
         }
         .nav-logo{
           display: none;
@@ -40,7 +40,9 @@ header{
           display: flex;
           flex-direction: column;
           align-items: flex-start;
+          justify-content: space-evenly;
           text-align: left;
+          gap: 3rem;
           .nav-link{
             transition: transform .2s;
             &:hover{
@@ -53,6 +55,10 @@ header{
               position: absolute;
               top: 10%;
               right: 10%;
+              @include breakpoint(576){
+                top: 20px;
+                right: 20px;
+              }
             }
             @include breakpoint(600){
               display: flex;
@@ -83,6 +89,7 @@ header{
         .nav-link{
           a{
             color: $white;
+            height: auto;
             &:hover{
               color: $gold;
               transition: color .2s;
@@ -93,8 +100,13 @@ header{
           }
           .burger{
             cursor: pointer;
-            &:hover span{
-              background-color: $gold;
+            //&:hover span{
+            //  background-color: $gold;
+            //}
+            @media (hover: hover){
+              &:hover span{
+                background: $gold;
+              }
             }
             span{
               width: 50px;

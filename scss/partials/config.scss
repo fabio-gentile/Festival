@@ -25,18 +25,21 @@ $navBarHeight: 10vh;
     box-sizing: border-box;
     scroll-behavior: smooth;
   }
-  ::selection{
-    color: $grey;
-    background-color: rgba(255, 215, 0, 0.9);
-  }
-  main{
+  //::selection{
+  //  color: $grey;
+  //  background-color: rgba(255, 215, 0, 0.9);
+  //}
+  body{
     background-image: url("../../img/background.svg");
     background-color: $grey;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 100%;
-    line-height: 140%;
+    line-height: 150%;
+  }
+  main{
+    min-height: 100vh - $navBarHeight;
   }
   a{
     text-decoration: none;
@@ -70,15 +73,16 @@ $navBarHeight: 10vh;
     font-family: $fontTitleReg;
     text-transform: lowercase;
     letter-spacing: 1px;
-    @include breakpoint(1024){
+    line-height: 160%;
+    //@include breakpoint(1024){
+    //  font-size: 2rem + $plus;
+    //}
+    @include breakpoint(768){
       font-size: 2rem + $plus;
     }
-    @include breakpoint(768){
-      font-size: 1.75rem + $plus;
-    }
-    @include breakpoint(480){
-      font-size: 1.5rem + $plus;
-    }
+    //@include breakpoint(480){
+    //  font-size: 1.5rem + $plus;
+    //}
   }
   @if $type == subtitle{
     font-size: 1.5rem + $plus;
@@ -105,44 +109,61 @@ $navBarHeight: 10vh;
   justify-content: center;
 }
 
-@mixin button{
-  width: fit-content;
-  border: none;
-  outline: none;
-  padding: .75rem 2.5rem;
-  cursor: pointer;
-  a{
-    text-decoration: none;
-    text-transform: lowercase;
-    text-align: center;
-    @include fontSize(subtitle, .25rem);
-    font-family: $fontTitleReg;
-    letter-spacing: 1px;
-  }
-
-  &:hover{
-    transition: all .2s ease-in-out;
-    border: 2px solid transparent;
-  }
-  @include breakpoint(480){
-    padding: .5rem 1rem;
+@mixin button($padTop: 0, $padBot: 0){
+  .button{
+    //margin-top: 2.25rem;
+    display: flex;
+    justify-content: center;
+    button{
+      background: transparent;
+      border: 2px solid $gold;
+      border-radius: 3px;
+      width: fit-content;
+      outline: none;
+      padding: (($padTop + .75rem) ($padBot + 2.5rem));
+      cursor: pointer;
+      a{
+        color: $gold;
+        text-decoration: none;
+        text-transform: lowercase;
+        text-align: center;
+        @include fontSize(subtitle, .25rem);
+        font-family: $fontTitleReg;
+        letter-spacing: 1px;
+      }
+      &:hover{
+        background: $gold;
+        transition: all .2s ease-in-out;
+        border: 2px solid transparent;
+        a{
+          color: $grey;
+        }
+      }
+      @include breakpoint(480){
+        padding: (($padTop + .5rem) ($padBot + 1rem));
+      }
+    }
   }
 }
 
 @mixin spaceSection{
-  padding: 5rem 0;
+  margin-top: 4rem;
   @include breakpoint(768){
-    padding: 4rem 0;
+    margin-top: 3rem;
   }
-  @include breakpoint(480){
-    padding: 3rem 0;
-  }
+  //@include breakpoint(480){
+  //  margin-top: 3rem;
+  //}
 }
 
-@mixin wrapper{
-  width: 1200px;
+@mixin spaceNav{
+  padding-top: $navBarHeight * 1.5;
+}
+
+@mixin wrapper($width: 0){
+  width: 1200px + $width;
   margin: 0 auto;
-  @include breakpoint(1250){
+  @include breakpoint(1250 + $width){
     width: 90%;
   }
 }

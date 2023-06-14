@@ -1,6 +1,12 @@
 @import "config";
-
+$name: fiftycent, drdre, eminem, icecube, jayz, kanye, nelly, outkast, snoop;
+@each $iteration in $name {
+      .#{$iteration}-bg {
+            background-image: url("../../img/home/#{$iteration}.jpg");
+      }
+}
 .home-artiste{
+      @include spaceSection;
       .bg{
             transition: opacity .5s ease-in-out;
             background-size: cover;
@@ -8,13 +14,14 @@
             background-position: center 20%;
             height: 65vh;
             @include breakpoint(1200){
-                  height: 50vh;
+                  height: fit-content;
+                  padding: 2rem 0;
             }
             .wrapper{
                   @include wrapper;
                   height: 100%;
                   .list{
-                        @include spaceSection;
+                        //@include spaceSection;
                         font-family: $fontTitleReg;
                         height: 100%;
                         display: flex;
@@ -56,12 +63,5 @@
                         }
                   }
             }
-      }
-}
-$name: fiftycent, drdre, eminem, icecube, jayz, kanye, nelly, outkast, snoop;
-
-@each $iteration in $name {
-      .#{$iteration}-bg {
-            background-image: url("../../img/home/#{$iteration}.jpg");
       }
 }

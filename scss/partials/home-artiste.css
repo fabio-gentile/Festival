@@ -1,3 +1,47 @@
+.fiftycent-bg {
+  background-image: url("../../img/home/fiftycent.jpg");
+}
+
+.drdre-bg {
+  background-image: url("../../img/home/drdre.jpg");
+}
+
+.eminem-bg {
+  background-image: url("../../img/home/eminem.jpg");
+}
+
+.icecube-bg {
+  background-image: url("../../img/home/icecube.jpg");
+}
+
+.jayz-bg {
+  background-image: url("../../img/home/jayz.jpg");
+}
+
+.kanye-bg {
+  background-image: url("../../img/home/kanye.jpg");
+}
+
+.nelly-bg {
+  background-image: url("../../img/home/nelly.jpg");
+}
+
+.outkast-bg {
+  background-image: url("../../img/home/outkast.jpg");
+}
+
+.snoop-bg {
+  background-image: url("../../img/home/snoop.jpg");
+}
+
+.home-artiste {
+  margin-top: 4rem;
+}
+@media (max-width: 768px) {
+  .home-artiste {
+    margin-top: 3rem;
+  }
+}
 .home-artiste .bg {
   transition: opacity 0.5s ease-in-out;
   background-size: cover;
@@ -7,7 +51,8 @@
 }
 @media (max-width: 1200px) {
   .home-artiste .bg {
-    height: 50vh;
+    height: fit-content;
+    padding: 2rem 0;
   }
 }
 .home-artiste .bg .wrapper {
@@ -21,21 +66,10 @@
   }
 }
 .home-artiste .bg .wrapper .list {
-  padding: 5rem 0;
   font-family: "Gobold Regular";
   height: 100%;
   display: flex;
   align-items: center;
-}
-@media (max-width: 768px) {
-  .home-artiste .bg .wrapper .list {
-    padding: 4rem 0;
-  }
-}
-@media (max-width: 480px) {
-  .home-artiste .bg .wrapper .list {
-    padding: 3rem 0;
-  }
 }
 .home-artiste .bg .wrapper .list ul .active {
   transition: all 0.3s ease-in-out;
@@ -89,42 +123,6 @@
   .home-artiste .bg .wrapper .list ul li:last-child a {
     font-size: 0.875rem;
   }
-}
-
-.fiftycent-bg {
-  background-image: url("../../img/home/fiftycent.jpg");
-}
-
-.drdre-bg {
-  background-image: url("../../img/home/drdre.jpg");
-}
-
-.eminem-bg {
-  background-image: url("../../img/home/eminem.jpg");
-}
-
-.icecube-bg {
-  background-image: url("../../img/home/icecube.jpg");
-}
-
-.jayz-bg {
-  background-image: url("../../img/home/jayz.jpg");
-}
-
-.kanye-bg {
-  background-image: url("../../img/home/kanye.jpg");
-}
-
-.nelly-bg {
-  background-image: url("../../img/home/nelly.jpg");
-}
-
-.outkast-bg {
-  background-image: url("../../img/home/outkast.jpg");
-}
-
-.snoop-bg {
-  background-image: url("../../img/home/snoop.jpg");
 }
 
 /*# sourceMappingURL=home-artiste.css.map */

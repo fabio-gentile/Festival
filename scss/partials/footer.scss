@@ -1,20 +1,19 @@
 @import "config";
 
 footer {
-  //@include gradientCol(top);
+  @include gradientCol(top);
   width: 100%;
-  background: linear-gradient(to top, $greyDark, $grey);
   color: $white;
   font-family: $fontText;
-  padding: 2rem 0;
-
+  padding: 2rem 0 0.5rem;
+  @include spaceSection;
   .wrapper {
     @include wrapper;
     @include flexCenter;
     flex-direction: column;
     gap: 2rem;
     h4{
-      @include fontSize(subtitle);
+      @include fontSize(subtitle, .25rem);
       letter-spacing: 1px;
       font-family: $fontTitleReg;
     }
@@ -58,7 +57,7 @@ footer {
           }
 
           i {
-            @include fontSize(subtitle);
+            @include fontSize(subtitle, .25rem);
           }
         }
       }

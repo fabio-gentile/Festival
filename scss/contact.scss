@@ -42,7 +42,8 @@
                         flex-wrap: wrap;
                         justify-content: space-between;
                         gap: 3rem;
-                        @include breakpoint(550){
+                        @include breakpoint(600){
+                              gap: 2rem;
                               .submit{
                                     flex-direction: column;
                                     justify-content: center;
@@ -64,13 +65,13 @@
                               display: block;
                               &:nth-child(1){
                                     width: 40%;
-                                    @include breakpoint(550){
+                                    @include breakpoint(600){
                                           width: 100%;
                                     }
                               }
                               &:nth-child(2){
                                     width: 50%;
-                                    @include breakpoint(550){
+                                    @include breakpoint(600){
                                           width: 100%;
                                     }
                               }
@@ -78,24 +79,29 @@
                                     width: 100%;
                               }
                               label{
-                                    @include fontSize(text, -.125rem);
-                                    color: $white;
+                                    color: rgb(192, 192, 192);
                                     position: absolute;
                                     pointer-events: none;
                                     top: 4px;
                                     left: 10px;
                                     transition: all .2s ease-in-out;
+                                    @include breakpoint(550){
+                                          left: 0;
+                                    }
                               }
                               input, label, textarea{
                                     width: 100%;
+                                    font-family: $fontText;
                               }
                               input, textarea{
+                                    font-size: 1.25rem;
                                     padding: .5rem;
                                     outline: none;
                                     border: none;
                                     background: none;
                                     border-bottom: 1px solid $white;
                                     caret-color: $white;
+                                    color: $white;
                               }
                               textarea{
                                     resize: none;
@@ -113,10 +119,11 @@
                               justify-content: space-between;
                               input{
                                     outline: none;
+                                    width: fit-content;
                                     background: none;
                                     border: 2px solid $gold;
                                     height: fit-content;
-                                    padding: .75rem 2.5rem;
+                                    padding: .75rem 3rem;
                                     cursor: pointer;
                                     text-transform: lowercase;
                                     text-align: center;
@@ -131,10 +138,10 @@
                                           color: $grey;
                                     }
                                     @include breakpoint(480){
-                                          padding: .5rem 1rem;
+                                          padding: .5rem 2rem;
                                     }
                               }
-                              .g-recaptcha{
+                              .captcha {
                                     @include breakpoint(350){
                                          transform: scale(.90);
                                     }

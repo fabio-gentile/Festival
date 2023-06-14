@@ -66,19 +66,14 @@ ul, li {
   }
 }
 #contact .wrapper .container {
-  padding: 5rem 0;
+  margin-top: 4rem;
   display: flex;
   gap: 3rem;
   flex-direction: column;
 }
 @media (max-width: 768px) {
   #contact .wrapper .container {
-    padding: 4rem 0;
-  }
-}
-@media (max-width: 480px) {
-  #contact .wrapper .container {
-    padding: 3rem 0;
+    margin-top: 3rem;
   }
 }
 #contact .wrapper .container .info {
@@ -127,7 +122,10 @@ ul, li {
   justify-content: space-between;
   gap: 3rem;
 }
-@media (max-width: 550px) {
+@media (max-width: 600px) {
+  #contact .wrapper .form form {
+    gap: 2rem;
+  }
   #contact .wrapper .form form .submit {
     flex-direction: column;
     justify-content: center;
@@ -149,7 +147,7 @@ ul, li {
 #contact .wrapper .form form .form-group:nth-child(1) {
   width: 40%;
 }
-@media (max-width: 550px) {
+@media (max-width: 600px) {
   #contact .wrapper .form form .form-group:nth-child(1) {
     width: 100%;
   }
@@ -157,7 +155,7 @@ ul, li {
 #contact .wrapper .form form .form-group:nth-child(2) {
   width: 50%;
 }
-@media (max-width: 550px) {
+@media (max-width: 600px) {
   #contact .wrapper .form form .form-group:nth-child(2) {
     width: 100%;
   }
@@ -166,31 +164,31 @@ ul, li {
   width: 100%;
 }
 #contact .wrapper .form form .form-group label {
-  font-size: 1rem;
-  font-family: "Source Sans Pro";
-  color: #ffffff;
-  color: #ffffff;
+  color: rgb(192, 192, 192);
   position: absolute;
   pointer-events: none;
   top: 4px;
   left: 10px;
   transition: all 0.2s ease-in-out;
 }
-@media (max-width: 480px) {
+@media (max-width: 550px) {
   #contact .wrapper .form form .form-group label {
-    font-size: 0.875rem;
+    left: 0;
   }
 }
 #contact .wrapper .form form .form-group input, #contact .wrapper .form form .form-group label, #contact .wrapper .form form .form-group textarea {
   width: 100%;
+  font-family: "Source Sans Pro";
 }
 #contact .wrapper .form form .form-group input, #contact .wrapper .form form .form-group textarea {
+  font-size: 1.25rem;
   padding: 0.5rem;
   outline: none;
   border: none;
   background: none;
   border-bottom: 1px solid #ffffff;
   caret-color: #ffffff;
+  color: #ffffff;
 }
 #contact .wrapper .form form .form-group textarea {
   resize: none;
@@ -206,10 +204,11 @@ ul, li {
 }
 #contact .wrapper .form form .submit input {
   outline: none;
+  width: fit-content;
   background: none;
   border: 2px solid #ffd700;
   height: fit-content;
-  padding: 0.75rem 2.5rem;
+  padding: 0.75rem 3rem;
   cursor: pointer;
   text-transform: lowercase;
   text-align: center;
@@ -236,11 +235,11 @@ ul, li {
 }
 @media (max-width: 480px) {
   #contact .wrapper .form form .submit input {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2rem;
   }
 }
 @media (max-width: 350px) {
-  #contact .wrapper .form form .submit .g-recaptcha {
+  #contact .wrapper .form form .submit .captcha {
     transform: scale(0.9);
   }
 }

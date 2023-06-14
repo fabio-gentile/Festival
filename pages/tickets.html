@@ -1,100 +1,200 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-      name="viewport"
-    />
-    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
-    <meta content="Fabio Gentile" name="author" />
-    <meta content="Tickets - Retro Rap Festival 2023" name="description" />
-    <link
-      href="../img/favicon-32x32.png"
-      rel="shortcut icon"
-      type="image/x-icon"
-    />
-    <link href="../scss/partials/navbar.css" rel="stylesheet" />
-    <link href="../scss/partials/footer.css" rel="stylesheet" />
-    <link href="../scss/partials/tickets.css" rel="stylesheet" />
-    <link
-      crossorigin="anonymous"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      referrerpolicy="no-referrer"
-      rel="stylesheet"
-    />
-    <title>Tickets - Retro Rap Festival</title>
-  </head>
-  <body>
-    <!--  navbar-->
-    <header>
-      <nav>
-        <div class="logo">Retro Rap Festival</div>
-        <ul>
-          <li><a class="active" href="../pages/index.html">Home</a></li>
-          <li><a href="../pages/lineup.html">Line-up</a></li>
-          <li><a href="../pages/tickets.html">Tickets</a></li>
-          <li>
-            <div class="burger">
-              <div class="bar"></div>
-              <div class="bar"></div>
-              <div class="bar"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport"
+  />
+  <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+  <link rel="preload"
+        href="../fonts/gobold/Gobold_Regular.woff"
+        as="font"
+        type="font/woff"
+        crossorigin />
+  <link rel="preload"
+        href="../fonts/gobold/Gobold_Bold.woff"
+        as="font"
+        type="font/woff"
+        crossorigin />
+  <meta name="author" content="Fabio Gentile" />
+  <meta name="title" content="Retro Rap Festival Contact" />
+  <meta name="description" content="Nous contacter" />
+  <meta property="og:title" content="Retro Rap Festival Contact" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="" />
+  <meta property="og:description" content="Nous contacter" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:site_name" content="Retro Rap Festival" />
+  <link
+          href="../img/favicon-32x32.png"
+          rel="shortcut icon"
+          type="image/x-icon"
+  />
+  <link href="../scss/partials/navbar.css" rel="stylesheet" />
+  <link href="../scss/partials/footer.css" rel="stylesheet" />
+  <link href="../scss/tickets.css" rel="stylesheet" />
+  <link
+          crossorigin="anonymous"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+          referrerpolicy="no-referrer"
+          rel="stylesheet"
+  />
+  <title>Tickets - Retro Rap Festival</title>
+</head>
+<body>
+<!--      navbar-->
+<header>
+  <nav class="nav">
+    <div class="wrapper">
+      <div class="nav-logo">Retro Rap Festival</div>
+      <ul>
+        <li class="nav-link">
+          <a href="./index.html">Home</a>
+        </li>
+        <li class="nav-link">
+          <a href="./lineup.html">Line-up</a>
+        </li>
+        <li class="nav-link">
+          <a href="./tickets.html">Tickets</a>
+        </li>
+        <li class="nav-link">
+          <a href="./faq.html">FAQ</a>
+        </li>
+        <li class="nav-link">
+          <a href="./partenaires.html">Partenaires</a>
+        </li>
+        <li class="nav-link">
+          <a href="./contact.html">Contact</a>
+        </li>
+        <li class="nav-link">
+          <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<script src="../js/navbar.js"></script>
+<main>
+  <section id="tickets">
+    <div class="wrapper">
+      <h3>Tickets</h3>
+        <div class="container">
+          <div class="box saturday">
+            <div class="content">
+              <h6>Samedi</h6>
+              <div class="text">
+                <ul>
+                  <li>Payement en 4x disponible.</li>
+                  <li>Navette de bus gratuite.</li>
+                  <li>Place pour le samedi.</li>
+                  <li>Parking payant à 900m du festival (10€).</li>
+                  <li>Bracelet offert.</li>
+                </ul>
+              </div>
+              <div class="basket">
+                <strong>79€/billet</strong>
+                <div class="add">
+                  <i class="fa-solid fa-minus"></i>
+                  <div class="increment"></div>
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
             </div>
-          </li>
-        </ul>
-      </nav>
-      <div class="menu">
-        <ul>
-          <li><a href="../pages/index.html">Home</a></li>
-          <li><a href="../pages/lineup.html">Line-up</a></li>
-          <li><a href="../pages/tickets.html">Tickets</a></li>
-          <li><a href="../pages/faq.html">FAQ</a></li>
-          <li><a href="../pages/partenaires.html">Partenaires</a></li>
-          <li><a href="../pages/contact.html">Contact</a></li>
-        </ul>
-        <div class="burger">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
         </div>
+          <div class="box sunday">
+            <div class="content">
+              <h6>Dimanche</h6>
+              <div class="text">
+                <ul>
+                  <li>Payement en 4x disponible.</li>
+                  <li>Navette de bus gratuite.</li>
+                  <li>Place pour le dimanche.</li>
+                  <li>Parking payant à 900m du festival (10€).</li>
+                  <li>Bracelet offert.</li>
+                </ul>
+              </div>
+              <div class="basket">
+                <strong>79€/billet</strong>
+                <div class="add">
+                  <i class="fa-solid fa-minus"></i>
+                  <div class="increment"></div>
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box weekend">
+            <div class="content">
+              <h6>Week-end</h6>
+              <div class="text">
+                <ul>
+                  <li>Payement en 4x <b>sans frais</b>.</li>
+                  <li>1 Boisson offerte.</li>
+                  <li>Un t-shirt exclusif offert.</li>
+                  <li>Parking <b>gratuit</b> à 500m du festival.</li>
+                  <li><b>Tous les avantages des autres billets.</b></li>
+                </ul>
+              </div>
+              <div class="basket">
+                <strong>165€/billet</strong>
+                <div class="add">
+                  <i class="fa-solid fa-minus"></i>
+                  <div class="increment"></div>
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
-      <script src="../js/navbar.js"></script>
-    </header>
-    <footer>
-      <div class="wrapper">
-        <h4>retro rap festival</h4>
-        <nav>
-          <ul>
-            <li><a href="../pages/index.html">Home</a></li>
-            <li><a href="../pages/lineup.html">Line-up</a></li>
-            <li><a href="../pages/tickets.html">Tickets</a></li>
-            <li><a href="../pages/faq.html">FAQ</a></li>
-            <li><a href="../pages/partenaires.html">Partenaires</a></li>
-            <li><a href="../pages/contact.html">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="socials">
-          <li>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-          </li>
-        </div>
-        <div class="credits">
-          <p>
-            Copyright &copy 2023• Retro Rap Festival. Bruxelles — Tous droits
-            réservés
-          </p>
-        </div>
+      <script src="../js/tickets.js"></script>
+      <div class="button">
+        <button>
+          <a href="#">Acheter</a>
+        </button>
       </div>
-    </footer>
-  </body>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrapper">
+    <h4>retro rap festival</h4>
+    <nav>
+      <ul>
+        <li><a href="../pages/index.html">Home</a></li>
+        <li><a href="../pages/lineup.html">Line-up</a></li>
+        <li><a href="#tickets">Tickets</a></li>
+        <li><a href="../pages/faq.html">FAQ</a></li>
+        <li><a href="../pages/partenaires.html">Partenaires</a></li>
+        <li><a href="../pages/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="socials">
+      <li>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      </li>
+    </div>
+    <div class="credits">
+      <p>
+        Copyright &copy 2023 • Retro Rap Festival. Bruxelles — Tous droits
+        réservés
+      </p>
+    </div>
+  </div>
+</footer>
+</body>
 </html>

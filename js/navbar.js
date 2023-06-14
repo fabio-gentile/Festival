@@ -1,21 +1,16 @@
 const burger = document.querySelector('header .nav ul .nav-link .burger')
 const nav = document.querySelector('header .nav')
 const header = document.querySelector('header');
-let open = false
+let burgerOpened = false
 const addOpacity = () => {
   nav.style.transition = 'opacity 0.3s ease-in-out'
   nav.style.opacity = 1
 }
-burger.addEventListener('click', (e) => {
+burger.addEventListener('click', () => {
   burger.classList.toggle("active")
   nav.classList.toggle("mobile")
-  if(!open){
-    open = true
-  } else{
-    open = false
-  }
-  // console.log(open)
-  if(open){
+  burgerOpened = !burgerOpened
+  if(burgerOpened){
     nav.style = ""
   } else{
     nav.style.opacity = 0
@@ -24,13 +19,15 @@ burger.addEventListener('click', (e) => {
 })
 let lastPosition = window.scrollY;
 window.addEventListener("scroll", () => {
-  let currentPosition = window.scrollY;
-  if (window.scrollY >= header.offsetHeight) {
-    if (lastPosition < currentPosition) {
-      header.style.top = `-${header.offsetHeight}vh`;
-    } else {
-      header.style.top = "0vh";
+  if(!burgerOpened){
+    let currentPosition = window.scrollY;
+    if (window.scrollY >= header.offsetHeight) {
+      if (lastPosition < currentPosition) {
+        header.style.top = `-${header.offsetHeight}vh`;
+      } else {
+        header.style.top = "0vh";
+      }
+      lastPosition = currentPosition;
     }
-    lastPosition = currentPosition;
   }
 })

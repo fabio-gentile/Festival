@@ -14,19 +14,18 @@
   scroll-behavior: smooth;
 }
 
-::selection {
-  color: #1d1d1d;
-  background-color: rgba(255, 215, 0, 0.9);
-}
-
-main {
+body {
   background-image: url("../../img/background.svg");
   background-color: #1d1d1d;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 100%;
-  line-height: 140%;
+  line-height: 150%;
+}
+
+main {
+  min-height: 90vh;
 }
 
 a {
@@ -35,6 +34,221 @@ a {
 
 ul, li {
   list-style: none;
+}
+
+#tickets {
+  padding-top: 15vh;
+}
+#tickets .wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 1250px) {
+  #tickets .wrapper {
+    width: 90%;
+  }
+}
+#tickets .wrapper h3 {
+  font-family: "Gobold Regular";
+  letter-spacing: 1px;
+  font-size: 2.25rem;
+  font-family: "Gobold Regular";
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  line-height: 160%;
+  text-align: center;
+  color: #ffd700;
+  text-transform: lowercase;
+}
+@media (max-width: 768px) {
+  #tickets .wrapper h3 {
+    font-size: 2rem;
+  }
+}
+#tickets .wrapper .container {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.25rem;
+}
+@media (max-width: 768px) {
+  #tickets .wrapper .container {
+    margin-top: 3rem;
+  }
+}
+#tickets .wrapper .container .box {
+  width: 300px;
+  border: 2px solid #ffffff;
+}
+#tickets .wrapper .container .box.saturday {
+  order: 1;
+}
+@media (max-width: 723px) {
+  #tickets .wrapper .container .box.saturday {
+    order: 2;
+  }
+}
+#tickets .wrapper .container .box.weekend {
+  order: 2;
+}
+@media (max-width: 1100px) {
+  #tickets .wrapper .container .box.weekend {
+    order: 3;
+  }
+}
+@media (max-width: 723px) {
+  #tickets .wrapper .container .box.weekend {
+    order: 1;
+  }
+}
+#tickets .wrapper .container .box.sunday {
+  order: 3;
+}
+@media (max-width: 1100px) {
+  #tickets .wrapper .container .box.sunday {
+    order: 2;
+  }
+}
+@media (max-width: 723px) {
+  #tickets .wrapper .container .box.sunday {
+    order: 3;
+  }
+}
+#tickets .wrapper .container .box.active {
+  border: 2px solid #ffd700;
+}
+#tickets .wrapper .container .box.active .content .basket strong {
+  color: #ffd700;
+}
+#tickets .wrapper .container .box .content {
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  height: 100%;
+}
+@media (max-width: 368px) {
+  #tickets .wrapper .container .box .content {
+    padding: 1.5rem 2.25rem;
+  }
+}
+#tickets .wrapper .container .box .content h6 {
+  font-family: "Gobold Regular";
+  letter-spacing: 1px;
+  font-size: 2.25rem;
+  font-family: "Gobold Regular";
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  line-height: 160%;
+  text-align: center;
+  color: #ffd700;
+  text-transform: lowercase;
+}
+@media (max-width: 768px) {
+  #tickets .wrapper .container .box .content h6 {
+    font-size: 2rem;
+  }
+}
+#tickets .wrapper .container .box .content .text {
+  font-size: 1.25rem;
+  font-family: "Source Sans Pro";
+  color: #ffffff;
+}
+@media (max-width: 480px) {
+  #tickets .wrapper .container .box .content .text {
+    font-size: 1.125rem;
+  }
+}
+#tickets .wrapper .container .box .content .text ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+#tickets .wrapper .container .box .content .text ul li {
+  position: relative;
+}
+#tickets .wrapper .container .box .content .text ul li:before {
+  content: "-";
+  position: absolute;
+  margin-left: -1rem;
+  font-size: 1.5rem;
+}
+#tickets .wrapper .container .box .content .basket {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.5rem;
+  font-family: "Gobold Regular";
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  font-weight: normal;
+  color: #ffffff;
+  gap: 1rem;
+  line-height: 160%;
+}
+@media (max-width: 576px) {
+  #tickets .wrapper .container .box .content .basket {
+    font-size: 1.375rem;
+  }
+}
+#tickets .wrapper .container .box .content .basket .add {
+  display: flex;
+  gap: 1rem;
+}
+#tickets .wrapper .container .box .content .basket .add i {
+  cursor: pointer;
+  align-self: center;
+}
+#tickets .wrapper .button {
+  display: flex;
+  justify-content: center;
+}
+#tickets .wrapper .button button {
+  background: transparent;
+  border: 2px solid #ffd700;
+  border-radius: 3px;
+  width: fit-content;
+  outline: none;
+  padding: 0.75rem 3.8rem;
+  cursor: pointer;
+}
+#tickets .wrapper .button button a {
+  color: #ffd700;
+  text-decoration: none;
+  text-transform: lowercase;
+  text-align: center;
+  font-size: 1.75rem;
+  font-family: "Gobold Regular";
+  letter-spacing: 1px;
+}
+@media (max-width: 1024px) {
+  #tickets .wrapper .button button a {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  #tickets .wrapper .button button a {
+    font-size: 1.375rem;
+  }
+}
+#tickets .wrapper .button button:hover {
+  background: #ffd700;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid transparent;
+}
+#tickets .wrapper .button button:hover a {
+  color: #1d1d1d;
+}
+@media (max-width: 480px) {
+  #tickets .wrapper .button button {
+    padding: 0.5rem 2.3rem;
+  }
+}
+#tickets .wrapper .button {
+  margin-top: 2.25rem;
 }
 
 /*# sourceMappingURL=tickets.css.map */

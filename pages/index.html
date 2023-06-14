@@ -7,13 +7,6 @@
       name="viewport"
     />
     <meta content="ie=edge" http-equiv="X-UA-Compatible" />
-    <meta content="Fabio Gentile" name="author" />
-    <meta content="Retro Rap Festival 2023" name="description" />
-    <link
-      href="../img/favicon-32x32.png"
-      rel="shortcut icon"
-      type="image/x-icon"
-    />
     <link rel="preload"
           href="../fonts/gobold/Gobold_Regular.woff"
             as="font"
@@ -24,10 +17,23 @@
           as="font"
           type="font/woff"
           crossorigin />
+    <meta name="author" content="Fabio Gentile" />
+    <meta name="title" content="Retro Rap Festival 2023" />
+    <meta name="description" content="Le Retro Rap Festival revient pour 2 journées avec les rappeurs américains les plus emblématiques" />
+    <meta property="og:title" content="Retro Rap Festival 2023" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="Le Retro Rap Festival revient pour 2 journées avec les rappeurs américains les plus emblématiques" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:site_name" content="Retro Rap Festival" />
+    <link
+      href="../img/favicon-32x32.png"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
     <link href="../scss/partials/navbar.css" rel="stylesheet" />
     <link href="../scss/partials/footer.css" rel="stylesheet" />
     <link href="../scss/partials/home-artiste.css" rel="stylesheet" />
-    <link href="../scss/partials/home-faq.css" rel="stylesheet" />
     <link href="../scss/home.css" rel="stylesheet" />
     <link
       crossorigin="anonymous"
@@ -46,7 +52,7 @@
         <div class="nav-logo">Retro Rap Festival</div>
         <ul>
           <li class="nav-link">
-            <a href="#home">Home</a>
+            <a href="./index.html">Home</a>
           </li>
           <li class="nav-link">
             <a href="./lineup.html">Line-up</a>
@@ -110,9 +116,11 @@
               <div class="text">
                 <h4>3e édition</h4>
                 <p>Le Retro Rap Festival revient pour 2 journées avec les rappeurs américains les plus emblématiques </p>
-                <button>
-                  <a href="../pages/tickets.html">Je réserve</a>
-                </button>
+                <div class="button">
+                  <button>
+                    <a href="../pages/tickets.html">Je réserve</a>
+                  </button>
+                </div>
               </div>
             </div>
             <div class="img"></div>
@@ -135,7 +143,7 @@
                   <li data-name="drdre"><a href="#">Dr. Dre</a></li>
                   <li data-name="nelly"><a href="#">Nelly</a></li>
                   <li data-name="outkast"><a href="#">Outkast</a></li>
-                  <li><a href="../pages/artistes">Et plus...</a></li>
+                  <li><a href="../pages/lineup.html">Et plus...</a></li>
                 </ul>
               </div>
             </div>

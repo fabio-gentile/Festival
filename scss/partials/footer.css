@@ -1,9 +1,15 @@
 footer {
-  width: 100%;
   background: linear-gradient(to top, #191919, #1d1d1d);
+  width: 100%;
   color: #ffffff;
   font-family: "Source Sans Pro";
-  padding: 2rem 0;
+  padding: 2rem 0 0.5rem;
+  margin-top: 4rem;
+}
+@media (max-width: 768px) {
+  footer {
+    margin-top: 3rem;
+  }
 }
 footer .wrapper {
   width: 1200px;
@@ -20,18 +26,18 @@ footer .wrapper {
   }
 }
 footer .wrapper h4 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   letter-spacing: 1px;
   font-family: "Gobold Regular";
 }
 @media (max-width: 1024px) {
   footer .wrapper h4 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 768px) {
   footer .wrapper h4 {
-    font-size: 1.125rem;
+    font-size: 1.375rem;
   }
 }
 footer .wrapper nav ul {
@@ -74,16 +80,16 @@ footer .wrapper .socials li a:hover {
   color: #ffd700;
 }
 footer .wrapper .socials li a i {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 @media (max-width: 1024px) {
   footer .wrapper .socials li a i {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 768px) {
   footer .wrapper .socials li a i {
-    font-size: 1.125rem;
+    font-size: 1.375rem;
   }
 }
 footer .wrapper .credits p {
