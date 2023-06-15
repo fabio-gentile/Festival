@@ -48,6 +48,8 @@
   background-repeat: no-repeat;
   background-position: center 20%;
   height: 65vh;
+  position: relative;
+  width: 100%;
 }
 @media (max-width: 1200px) {
   .home-artiste .bg {

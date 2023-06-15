@@ -1,0 +1,121 @@
+@import "./partials/config";
+@include init;
+$name: bustarhymes, fiftycent, drdre, eminem, icecube, jayz, kanye, lilwayne, mosdef, nas, nelly, outkast, snoop;
+@each $iteration in $name {
+      .#{$iteration}-bg {
+            background-image: url("../../img/artiste/#{$iteration}.webp");
+      }
+}
+section {
+      @include spaceNav;
+      .wrapper {
+            @include wrapper();
+            .container{
+                  width: 100%;
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: space-between;
+                  .img, .info{
+                        width: (100% / 2) - 1%;
+                        @include breakpoint(770){
+                              width: 100%;
+                        }
+                  }
+                  .img{
+                        display: flex;
+                        flex-direction: column;
+                        gap: .8rem;
+                        margin-top: .7rem;
+                        h5{
+                              @include titleSection();
+                              text-align: center;
+                              display: none;
+                              @include breakpoint(770){
+                                    display: block;
+                                    margin-bottom: 1rem;
+                              }
+                        }
+                        img{
+                              height: 100%;
+                              width: 100%;
+                              object-fit: cover;
+                        }
+                  }
+                  .info{
+                        display: flex;
+                        flex-direction: column;
+                        gap: .8rem;
+                        @include breakpoint(770){
+                              order: 3;
+                        }
+                        h5{
+                              @include titleSection();
+                              text-align: left;
+                              @include breakpoint(770){
+                                    display: none;
+                              }
+                        }
+                        .days{
+                              font-family: $fontTitleReg;
+                              text-transform: lowercase;
+                              @include breakpoint(770){
+                                    margin-top: .8rem;
+                              }
+                        }
+                        .days, .schedule, .bio{
+                              color: $white;
+                        }
+                        .days, .schedule{
+                              font-size: 1.25rem;
+                        }
+                        .schedule{
+                              font-family: $fontText;
+                        }
+                        .bio{
+                              display: flex;
+                              flex-direction: column;
+                              gap: 1rem;
+                              p{
+                                    @include fontSize(text);
+                              }
+                        }
+                  }
+                  .socials-links{
+                        width: 100%;
+                        padding-top: 1rem;
+                        @include breakpoint(770){
+                              order: 2;
+                        }
+                        ul{
+                              display: flex;
+                              gap: 1.5rem;
+                              li{
+                                    a{
+                                          i{
+                                                color: $white;
+                                                font-size: 1.875rem;
+                                                @include breakpoint(792){
+                                                      font-size: 1.5rem;
+                                                }
+                                                @include breakpoint(480){
+                                                      font-size: 1.25rem;
+                                                }
+                                                &:hover{
+                                                      color: $gold;
+                                                }
+                                          }
+                                    }
+                              }
+                        }
+                  }
+            }
+            .playlist{
+                  width: 100%;
+                  @include spaceSection;
+                  iframe{
+                        width: 100%;
+                        min-height: 50vh;
+                  }
+            }
+      }
+}

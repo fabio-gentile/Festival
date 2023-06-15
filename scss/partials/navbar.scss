@@ -55,8 +55,8 @@ header{
               top: 10%;
               right: 10%;
               @include breakpoint(576){
-                top: 20px;
-                right: 20px;
+                top: 40px;
+                right: 40px;
               }
             }
             @include breakpoint(600){

@@ -63,8 +63,8 @@ header .nav.mobile .wrapper ul .nav-link .burger {
 }
 @media (max-width: 576px) {
   header .nav.mobile .wrapper ul .nav-link .burger {
-    top: 20px;
-    right: 20px;
+    top: 40px;
+    right: 40px;
   }
 }
 @media (max-width: 600px) {
