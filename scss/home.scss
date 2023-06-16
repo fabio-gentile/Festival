@@ -103,7 +103,7 @@ section{
         align-items: center;
         flex-direction: column;
         gap: 2rem;
-        h4{
+        h2{
           @include titleSection;
         }
         p{
@@ -130,7 +130,7 @@ section{
   @include flexCenter;
   flex-direction: column;
   gap: 2.25rem;
-  h4{
+  h2{
     @include titleSection;
   }
   .wrapper{
@@ -144,13 +144,6 @@ section{
 //video
 .home-video{
   @include spaceSection;
-  padding-bottom: 5rem;
-  @include breakpoint(768){
-    padding-bottom: 4rem;
-  }
-  @include breakpoint(360){
-    padding-bottom: 3rem;
-  }
   .wrapper{
     @include wrapper();
     iframe{

@@ -15,12 +15,14 @@
       type="font/woff"
     />
     <meta content="Fabio Gentile" name="author" />
-    <meta content="Retro Rap Festival Contact" name="title" />
-    <meta content="Nous contacter" name="description" />
-    <meta content="Retro Rap Festival Contact" property="og:title" />
+    <meta content="Retro Rap Festival Partenaires" name="title" />
+    <meta content="Découvrez nos partenaires" name="description" />
+    <meta content="Retro Rap Festival Partenaires" property="og:title" />
     <meta content="website" property="og:type" />
-    <meta content="" property="og:image" />
-    <meta content="Nous contacter" property="og:description" />
+    <meta content="../img/home/stage.jpg" property="og:image" />
+    <meta content="1280" property="og:image:width" />
+    <meta content="720" property="og:image:height" />
+    <meta content="Découvrez nos partenaires" property="og:description" />
     <meta content="fr_FR" property="og:locale" />
     <meta content="Retro Rap Festival" property="og:site_name" />
     <link
@@ -31,7 +33,7 @@
     <link href="../scss/partials/animation.css" rel="stylesheet" />
     <link href="../scss/partials/navbar.css" rel="stylesheet" />
     <link href="../scss/partials/footer.css" rel="stylesheet" />
-    <link href="../scss/contact.css" rel="stylesheet" />
+    <link href="../scss/partners.css" rel="stylesheet" />
     <link
       crossorigin="anonymous"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -39,8 +41,7 @@
       referrerpolicy="no-referrer"
       rel="stylesheet"
     />
-    <script async defer src="https://www.google.com/recaptcha/api.js"></script>
-    <title>Contact - Retro Rap Festival</title>
+    <title>Partenaires - Retro Rap Festival</title>
   </head>
   <body>
     <!--  loading -->
@@ -74,7 +75,7 @@
                 <a href="./faq.html">FAQ</a>
               </li>
               <li class="nav-link">
-                <a href="partners.html">Partenaires</a>
+                <a href="./partners.html">Partenaires</a>
               </li>
               <li class="nav-link">
                 <a href="./contact.html">Contact</a>
@@ -92,49 +93,46 @@
       </header>
       <script src="../js/navbar.js"></script>
       <main>
-        <section id="contact">
+        <section id="partners">
           <div class="wrapper">
-            <h2>Contact</h2>
+            <h2>Partenaires</h2>
             <div class="container">
-              <div class="info">
-                <div class="email">
-                  <a href="mailto:#">
-                    <i class="fa-solid fa-envelope"></i>
-                    <p>retrorapfestival@contact.be</p>
-                  </a>
-                </div>
-                <div class="phone">
-                  <a href="tel:#">
-                    <i class="fa-solid fa-phone"></i>
-                    <p>+32.496.12.34.56</p>
-                  </a>
-                </div>
+              <div class="box">
+                <a href="https://fr.jbl.com/" target="_blank"></a>
+                <div class="logo jbl"></div>
               </div>
-              <p>Ou via le formulaire ci-dessous</p>
-              <div class="form">
-                <form action="#" method="post">
-                  <div class="form-group">
-                    <input id="name" name="name" required type="text" />
-                    <label for="name">Nom</label>
-                  </div>
-                  <div class="form-group">
-                    <input id="email" name="email" required type="email" />
-                    <label for="email">Adresse email</label>
-                  </div>
-                  <div class="form-group">
-                    <textarea id="message" name="message" required></textarea>
-                    <label for="message">Message</label>
-                  </div>
-                  <div class="submit">
-                    <input type="submit" value="ENVOYER" />
-                    <div class="captcha">
-                      <div
-                        class="g-recaptcha"
-                        data-sitekey="6Ldu7J4mAAAAAKi5qeA-qzVnoytYX9RmEl6PvwLc"
-                      ></div>
-                    </div>
-                  </div>
-                </form>
+              <div class="box">
+                <a
+                  href="https://www.dhl.com/be-fr/home.html"
+                  target="_blank"
+                ></a>
+                <div class="logo dhl"></div>
+              </div>
+              <div class="box">
+                <a
+                  href="https://www.mastercard.be/fr-be.html/"
+                  target="_blank"
+                ></a>
+                <div class="logo mastercard"></div>
+              </div>
+              <div class="box">
+                <a href="https://www.samsung.com/be_fr/" target="_blank"></a>
+                <div class="logo samsung"></div>
+              </div>
+              <div class="box">
+                <a href="https://www.prada.com/be/fr.html" target="_blank"></a>
+                <div class="logo prada"></div>
+              </div>
+              <div class="box">
+                <a href="https://open.spotify.com/" target="_blank"></a>
+                <div class="logo spotify"></div>
+              </div>
+              <div class="box">
+                <a
+                  href="https://www.pirelli.com/tyres/fr-be/auto/homepage/"
+                  target="_blank"
+                ></a>
+                <div class="logo pirelli"></div>
               </div>
             </div>
           </div>
@@ -149,8 +147,8 @@
               <li><a href="../pages/lineup.html">Line-up</a></li>
               <li><a href="../pages/tickets.html">Tickets</a></li>
               <li><a href="../pages/faq.html">FAQ</a></li>
-              <li><a href="partners.html">Partenaires</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="#partners">Partenaires</a></li>
+              <li><a href="../pages/contact.html">Contact</a></li>
             </ul>
           </nav>
           <div class="socials">

@@ -1,10 +1,11 @@
-const loader = document.querySelector('.lds-ring');
-let loaded = false
-window.addEventListener('load', () => {
-    loader.style.display = "none"
-    document.body.style.overflow = "unset"
-    loaded = !loaded
-})
+const loader = document.querySelector(".spinner");
+let loaded = false;
+window.addEventListener("load", () => {
+  loader.style.display = "none";
+  document.body.style.overflow = "unset";
+  document.querySelector(".fade").classList.add("fade-out");
+  loaded = !loaded;
+});
 
 // const observer = new IntersectionObserver((entries) => {
 //     entries.forEach((entry) => {
@@ -24,5 +25,3 @@ window.addEventListener('load', () => {
 //     console.log(observer)
 //     observer.observe(element)
 // })
-
-

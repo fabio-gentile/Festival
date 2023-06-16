@@ -17,17 +17,15 @@
             justify-content: space-between;
             align-items: center;
             padding-bottom: 2.5rem;
-            h6{
+            h3{
                   font-family: $fontText;
-                  font-weight: bold;
-                  @include fontSize(subtitle, -.125rem);
             }
             h4{
                   font-family: $fontText;
                   text-transform: initial;
                   text-align: left;
             }
-            h4, i{
+            h3, i{
                   color: $white;
                   @include fontSize(subtitle, .125rem);
                   font-weight: bold;
@@ -45,9 +43,17 @@
                   width: 95%;
                   margin-bottom: 2rem;
                   @include fontSize(text);
+                  a{
+                        color: $white;
+                        font-weight: bold;
+                        text-decoration: underline;
+                  }
+                  span{
+                        text-decoration: underline;
+                  }
             }
             .subtitle{
-                  h6{
+                  h4{
                         color: $white;
                         @include fontSize(subtitle);
                         text-transform: none;

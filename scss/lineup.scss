@@ -10,7 +10,7 @@ $name: bustarhymes, fiftycent, drdre, eminem, icecube, jayz, kanye, lilwayne, mo
       @include spaceNav;
       .wrapper{
             @include wrapper();
-            h3{
+            h2{
                   @include titleSection();
             }
             .days{

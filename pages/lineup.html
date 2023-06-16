@@ -1,500 +1,564 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta
-            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-            name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      name="viewport"
     />
     <meta content="ie=edge" http-equiv="X-UA-Compatible" />
-    <link rel="preload"
-          href="../fonts/gobold/Gobold_Regular.woff"
-          as="font"
-          type="font/woff"
-          crossorigin />
-    <link rel="preload"
-          href="../fonts/gobold/Gobold_Bold.woff"
-          as="font"
-          type="font/woff"
-          crossorigin />
-    <meta name="author" content="Fabio Gentile" />
-    <meta name="title" content="Retro Rap Festival Line-up" />
-    <meta name="description" content="La line-up du Retro Rap Festival" />
-    <meta property="og:title" content="Retro Rap Festival Line-up" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="../img/home/stage.jpg" />
-    <meta property="og:image:width" content="1280">
-    <meta property="og:image:height" content="720">
-    <meta property="og:description" content="La line-up du Retro Rap Festival" />
-    <meta property="og:locale" content="fr_FR" />
-    <meta property="og:site_name" content="Retro Rap Festival" />
     <link
-            href="../img/favicon-32x32.png"
-            rel="shortcut icon"
-            type="image/x-icon"
+      as="font"
+      crossorigin
+      href="../fonts/gobold/Gobold_Regular.woff"
+      rel="preload"
+      type="font/woff"
     />
-    <link href="../scss/partials/animation.css" rel="stylesheet">
+    <meta content="Fabio Gentile" name="author" />
+    <meta content="Retro Rap Festival Line-up" name="title" />
+    <meta content="La line-up du Retro Rap Festival" name="description" />
+    <meta content="Retro Rap Festival Line-up" property="og:title" />
+    <meta content="website" property="og:type" />
+    <meta content="../img/home/stage.jpg" property="og:image" />
+    <meta content="1280" property="og:image:width" />
+    <meta content="720" property="og:image:height" />
+    <meta
+      content="La line-up du Retro Rap Festival"
+      property="og:description"
+    />
+    <meta content="fr_FR" property="og:locale" />
+    <meta content="Retro Rap Festival" property="og:site_name" />
+    <link
+      href="../img/favicon-32x32.png"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <link href="../scss/partials/animation.css" rel="stylesheet" />
     <link href="../scss/partials/navbar.css" rel="stylesheet" />
     <link href="../scss/partials/footer.css" rel="stylesheet" />
     <link href="../scss/lineup.css" rel="stylesheet" />
     <link
-            crossorigin="anonymous"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-            referrerpolicy="no-referrer"
-            rel="stylesheet"
+      crossorigin="anonymous"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      referrerpolicy="no-referrer"
+      rel="stylesheet"
     />
     <title>Line-up - Retro Rap Festival</title>
-</head>
-<body>
-<!--  chargement-->
-<div class="lds-ring">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-</div>
-<!--      navbar-->
-<header>
-    <nav class="nav">
-        <div class="wrapper">
-            <div class="nav-logo">Retro Rap Festival</div>
-            <ul>
-                <li class="nav-link">
-                    <a href="../index.html">Home</a>
-                </li>
-                <li class="nav-link">
-                    <a href="./lineup.html">Line-up</a>
-                </li>
-                <li class="nav-link">
-                    <a href="./tickets.html">Tickets</a>
-                </li>
-                <li class="nav-link">
-                    <a href="./faq.html">FAQ</a>
-                </li>
-                <li class="nav-link">
-                    <a href="./partenaires.html">Partenaires</a>
-                </li>
-                <li class="nav-link">
-                    <a href="./contact.html">Contact</a>
-                </li>
-                <li class="nav-link">
-                    <div class="burger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</header>
-<script src="../js/navbar.js"></script>
-<main>
-    <section id="line-up">
-        <div class="wrapper">
-            <h3>Line-up</h3>
-            <div class="days">
-                <li class="active">A-Z</li>
-                <li>Samedi</li>
-                <li>Dimanche</li>
-            </div>
-<!--            weekend-->
-            <div class="container weekend">
-                <div class="card">
-                    <a href="./artistes/eminem.html">
-                        <div class="card-img eminem-bg"></div>
-                        <div class="card-body">
-                            <div class="card-text">
-                                <div class="name">Eminem</div>
-                                <div class="schedule">20:00 - 22:00</div>
-                            </div>
-                            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <div class="card-img fiftycent-bg"></div>
-                        <div class="card-body">
-                            <div class="card-text">
-                                <div class="name">50 Cent</div>
-                                <div class="schedule">20:00 - 22:00</div>
-                            </div>
-                            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <div class="card-img drdre-bg"></div>
-                        <div class="card-body">
-                            <div class="card-text">
-                                <div class="name">Dr. Dre</div>
-                                <div class="schedule">20:00 - 22:00</div>
-                            </div>
-                            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <div class="card-img bustarhymes-bg"></div>
-                        <div class="card-body">
-                            <div class="card-text">
-                                <div class="name">Busta Rhymes</div>
-                                <div class="schedule">20:00 - 22:00</div>
-                            </div>
-                            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <div class="card-img icecube-bg"></div>
-                        <div class="card-body">
-                            <div class="card-text">
-                                <div class="name">Ice cube</div>
-                                <div class="schedule">20:00 - 22:00</div>
-                            </div>
-                            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="./artistes/jayz.html">
-                        <div class="card-img jayz-bg"></div>
-                        <div class="card-body">
-                            <div class="card-text">
-                                <div class="name">Jay-Z</div>
-                                <div class="schedule">22:00 - 23:00</div>
-                            </div>
-                            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <div class="card-img kanye-bg"></div>
-                        <div class="card-body">
-                            <div class="card-text">
-                                <div class="name">Kanye West</div>
-                                <div class="schedule">20:00 - 22:00</div>
-                            </div>
-                            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <div class="card-img lilwayne-bg"></div>
-                        <div class="card-body">
-                            <div class="card-text">
-                                <div class="name">Lil Wayne</div>
-                                <div class="schedule">20:00 - 22:00</div>
-                            </div>
-                            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <div class="card-img mosdef-bg"></div>
-                        <div class="card-body">
-                            <div class="card-text">
-                                <div class="name">Mos Def</div>
-                                <div class="schedule">20:00 - 22:00</div>
-                            </div>
-                            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <div class="card-img nas-bg"></div>
-                        <div class="card-body">
-                            <div class="card-text">
-                                <div class="name">Nas</div>
-                                <div class="schedule">20:00 - 22:00</div>
-                            </div>
-                            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <div class="card-img nelly-bg"></div>
-                        <div class="card-body">
-                            <div class="card-text">
-                                <div class="name">Nelly</div>
-                                <div class="schedule">20:00 - 22:00</div>
-                            </div>
-                            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <div class="card-img outkast-bg"></div>
-                        <div class="card-body">
-                            <div class="card-text">
-                                <div class="name">Outkast</div>
-                                <div class="schedule">20:00 - 22:00</div>
-                            </div>
-                            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <div class="card-img snoop-bg"></div>
-                        <div class="card-body">
-                            <div class="card-text">
-                                <div class="name">Snoop Dogg</div>
-                                <div class="schedule">20:00 - 22:00</div>
-                            </div>
-                            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-<!--            saturday-->
-            <div class="container saturday">
-                <div class="card">
-                    <a href="#">
-                        <div class="card-img icecube-bg"></div>
-                        <div class="card-body">
-                            <div class="card-text">
-                                <div class="name">Ice cube</div>
-                                <div class="schedule">20:00 - 22:00</div>
-                            </div>
-                            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="./artistes/eminem.html">
-                        <div class="card-img eminem-bg"></div>
-                        <div class="card-body">
-                            <div class="card-text">
-                                <div class="name">Eminem</div>
-                                <div class="schedule">20:00 - 22:00</div>
-                            </div>
-                            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="./artistes/jayz.html">
-                        <div class="card-img jayz-bg"></div>
-                        <div class="card-body">
-                            <div class="card-text">
-                                <div class="name">Jay-Z</div>
-                                <div class="schedule">22:00 - 23:00</div>
-                            </div>
-                            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <div class="card-img kanye-bg"></div>
-                        <div class="card-body">
-                            <div class="card-text">
-                                <div class="name">Kanye West</div>
-                                <div class="schedule">20:00 - 22:00</div>
-                            </div>
-                            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <div class="card-img lilwayne-bg"></div>
-                        <div class="card-body">
-                            <div class="card-text">
-                                <div class="name">Lil Wayne</div>
-                                <div class="schedule">20:00 - 22:00</div>
-                            </div>
-                            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <div class="card-img outkast-bg"></div>
-                        <div class="card-body">
-                            <div class="card-text">
-                                <div class="name">Outkast</div>
-                                <div class="schedule">20:00 - 22:00</div>
-                            </div>
-                            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <div class="card-img snoop-bg"></div>
-                        <div class="card-body">
-                            <div class="card-text">
-                                <div class="name">Snoop Dogg</div>
-                                <div class="schedule">20:00 - 22:00</div>
-                            </div>
-                            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-<!--            sunday-->
-            <div class="container sunday">
-                <div class="card">
-                    <a href="./artistes/eminem.html">
-                        <div class="card-img eminem-bg"></div>
-                        <div class="card-body">
-                            <div class="card-text">
-                                <div class="name">Eminem</div>
-                                <div class="schedule">20:00 - 22:00</div>
-                            </div>
-                            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <div class="card-img fiftycent-bg"></div>
-                        <div class="card-body">
-                            <div class="card-text">
-                                <div class="name">50 Cent</div>
-                                <div class="schedule">20:00 - 22:00</div>
-                            </div>
-                            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <div class="card-img icecube-bg"></div>
-                        <div class="card-body">
-                            <div class="card-text">
-                                <div class="name">Ice cube</div>
-                                <div class="schedule">20:00 - 22:00</div>
-                            </div>
-                            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="./artistes/jayz.html">
-                        <div class="card-img jayz-bg"></div>
-                        <div class="card-body">
-                            <div class="card-text">
-                                <div class="name">Jay-Z</div>
-                                <div class="schedule">22:00 - 23:00</div>
-                            </div>
-                            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <div class="card-img kanye-bg"></div>
-                        <div class="card-body">
-                            <div class="card-text">
-                                <div class="name">Kanye West</div>
-                                <div class="schedule">20:00 - 22:00</div>
-                            </div>
-                            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <div class="card-img nas-bg"></div>
-                        <div class="card-body">
-                            <div class="card-text">
-                                <div class="name">Nas</div>
-                                <div class="schedule">20:00 - 22:00</div>
-                            </div>
-                            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <div class="card-img nelly-bg"></div>
-                        <div class="card-body">
-                            <div class="card-text">
-                                <div class="name">Nelly</div>
-                                <div class="schedule">20:00 - 22:00</div>
-                            </div>
-                            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <div class="card-img outkast-bg"></div>
-                        <div class="card-body">
-                            <div class="card-text">
-                                <div class="name">Outkast</div>
-                                <div class="schedule">20:00 - 22:00</div>
-                            </div>
-                            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <div class="card-img snoop-bg"></div>
-                        <div class="card-body">
-                            <div class="card-text">
-                                <div class="name">Snoop Dogg</div>
-                                <div class="schedule">20:00 - 22:00</div>
-                            </div>
-                            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <script src="../js/lineup.js"></script>
-</main>
-<footer>
-    <div class="wrapper">
-        <h4>retro rap festival</h4>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="#line-up">Line-up</a></li>
-                <li><a href="../pages/tickets.html">Tickets</a></li>
-                <li><a href="../pages/faq.html">FAQ</a></li>
-                <li><a href="../pages/partenaires.html">Partenaires</a></li>
-                <li><a href="../pages/contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="socials">
-            <li>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            </li>
-            <li>
-                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-            </li>
-            <li>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            </li>
-            <li>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            </li>
-        </div>
-        <div class="credits">
-            <p>
-                Copyright &copy 2023 • Retro Rap Festival. Bruxelles — Tous droits
-                réservés
-            </p>
-        </div>
+  </head>
+  <body>
+    <!--  loading -->
+    <div class="spinner">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
-</footer>
-<script src="../js/animation.js"></script>
-</body>
+    <div class="fade">
+      <!--      navbar-->
+      <header>
+        <nav class="nav">
+          <div class="wrapper">
+            <div class="nav-logo">
+              <h1>
+                <a href="../index.html">Retro Rap Festival</a>
+              </h1>
+            </div>
+            <ul>
+              <li class="nav-link">
+                <a href="../index.html">Home</a>
+              </li>
+              <li class="nav-link">
+                <a href="./lineup.html">Line-up</a>
+              </li>
+              <li class="nav-link">
+                <a href="./tickets.html">Tickets</a>
+              </li>
+              <li class="nav-link">
+                <a href="./faq.html">FAQ</a>
+              </li>
+              <li class="nav-link">
+                <a href="partners.html">Partenaires</a>
+              </li>
+              <li class="nav-link">
+                <a href="./contact.html">Contact</a>
+              </li>
+              <li class="nav-link">
+                <div class="burger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <script src="../js/navbar.js"></script>
+      <main>
+        <section id="line-up">
+          <div class="wrapper">
+            <h2>Line-up</h2>
+            <div class="days">
+              <li class="active">A-Z</li>
+              <li>Samedi</li>
+              <li>Dimanche</li>
+            </div>
+            <!--            weekend-->
+            <div class="container weekend">
+              <div class="card">
+                <a href="artists/eminem.html">
+                  <div class="card-img eminem-bg"></div>
+                  <div class="card-body">
+                    <div class="card-text">
+                      <div class="name">Eminem</div>
+                      <div class="schedule">22:00 - 23:15</div>
+                    </div>
+                    <div class="arrow">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a href="#">
+                  <div class="card-img fiftycent-bg"></div>
+                  <div class="card-body">
+                    <div class="card-text">
+                      <div class="name">50 Cent</div>
+                      <div class="schedule">23:20 - 00:15</div>
+                    </div>
+                    <div class="arrow">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a href="#">
+                  <div class="card-img drdre-bg"></div>
+                  <div class="card-body">
+                    <div class="card-text">
+                      <div class="name">Dr. Dre</div>
+                      <div class="schedule">23:20 - 00:15</div>
+                    </div>
+                    <div class="arrow">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a href="#">
+                  <div class="card-img bustarhymes-bg"></div>
+                  <div class="card-body">
+                    <div class="card-text">
+                      <div class="name">Busta Rhymes</div>
+                      <div class="schedule">17:05 - 17:55</div>
+                    </div>
+                    <div class="arrow">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a href="#">
+                  <div class="card-img icecube-bg"></div>
+                  <div class="card-body">
+                    <div class="card-text">
+                      <div class="name">Ice cube</div>
+                      <div class="schedule">20:00 - 22:00</div>
+                    </div>
+                    <div class="arrow">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a href="artists/jayz.html">
+                  <div class="card-img jayz-bg"></div>
+                  <div class="card-body">
+                    <div class="card-text">
+                      <div class="name">Jay-Z</div>
+                      <div class="schedule">20:50 - 21:55</div>
+                    </div>
+                    <div class="arrow">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a href="#">
+                  <div class="card-img kanye-bg"></div>
+                  <div class="card-body">
+                    <div class="card-text">
+                      <div class="name">Kanye West</div>
+                      <div class="schedule">19:45 - 20:50</div>
+                    </div>
+                    <div class="arrow">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a href="#">
+                  <div class="card-img lilwayne-bg"></div>
+                  <div class="card-body">
+                    <div class="card-text">
+                      <div class="name">Lil Wayne</div>
+                      <div class="schedule">20:00 - 22:00</div>
+                    </div>
+                    <div class="arrow">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a href="#">
+                  <div class="card-img mosdef-bg"></div>
+                  <div class="card-body">
+                    <div class="card-text">
+                      <div class="name">Mos Def</div>
+                      <div class="schedule">18:00 - 18:55</div>
+                    </div>
+                    <div class="arrow">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a href="#">
+                  <div class="card-img nas-bg"></div>
+                  <div class="card-body">
+                    <div class="card-text">
+                      <div class="name">Nas</div>
+                      <div class="schedule">18:55 - 19:40</div>
+                    </div>
+                    <div class="arrow">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a href="#">
+                  <div class="card-img nelly-bg"></div>
+                  <div class="card-body">
+                    <div class="card-text">
+                      <div class="name">Nelly</div>
+                      <div class="schedule">18:00 - 18:55</div>
+                    </div>
+                    <div class="arrow">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a href="#">
+                  <div class="card-img outkast-bg"></div>
+                  <div class="card-body">
+                    <div class="card-text">
+                      <div class="name">Outkast</div>
+                      <div class="schedule">17:05 - 17:55</div>
+                    </div>
+                    <div class="arrow">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a href="#">
+                  <div class="card-img snoop-bg"></div>
+                  <div class="card-body">
+                    <div class="card-text">
+                      <div class="name">Snoop Dogg</div>
+                      <div class="schedule">18:55 - 19:40</div>
+                    </div>
+                    <div class="arrow">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!--            saturday-->
+            <div class="container saturday">
+              <div class="card">
+                <a href="#">
+                  <div class="card-img icecube-bg"></div>
+                  <div class="card-body">
+                    <div class="card-text">
+                      <div class="name">Ice cube</div>
+                      <div class="schedule">20:00 - 22:00</div>
+                    </div>
+                    <div class="arrow">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a href="artists/eminem.html">
+                  <div class="card-img eminem-bg"></div>
+                  <div class="card-body">
+                    <div class="card-text">
+                      <div class="name">Eminem</div>
+                      <div class="schedule">22:00 - 23:15</div>
+                    </div>
+                    <div class="arrow">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a href="artists/jayz.html">
+                  <div class="card-img jayz-bg"></div>
+                  <div class="card-body">
+                    <div class="card-text">
+                      <div class="name">Jay-Z</div>
+                      <div class="schedule">20:50 - 21:55</div>
+                    </div>
+                    <div class="arrow">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a href="#">
+                  <div class="card-img kanye-bg"></div>
+                  <div class="card-body">
+                    <div class="card-text">
+                      <div class="name">Kanye West</div>
+                      <div class="schedule">19:45 - 20:50</div>
+                    </div>
+                    <div class="arrow">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a href="#">
+                  <div class="card-img lilwayne-bg"></div>
+                  <div class="card-body">
+                    <div class="card-text">
+                      <div class="name">Lil Wayne</div>
+                      <div class="schedule">20:00 - 22:00</div>
+                    </div>
+                    <div class="arrow">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a href="#">
+                  <div class="card-img drdre-bg"></div>
+                  <div class="card-body">
+                    <div class="card-text">
+                      <div class="name">Dr. Dre</div>
+                      <div class="schedule">23:20 - 00:15</div>
+                    </div>
+                    <div class="arrow">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a href="#">
+                  <div class="card-img snoop-bg"></div>
+                  <div class="card-body">
+                    <div class="card-text">
+                      <div class="name">Snoop Dogg</div>
+                      <div class="schedule">18:55 - 19:40</div>
+                    </div>
+                    <div class="arrow">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!--            sunday-->
+            <div class="container sunday">
+              <div class="card">
+                <a href="artists/eminem.html">
+                  <div class="card-img eminem-bg"></div>
+                  <div class="card-body">
+                    <div class="card-text">
+                      <div class="name">Eminem</div>
+                      <div class="schedule">22:00 - 23:15</div>
+                    </div>
+                    <div class="arrow">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a href="#">
+                  <div class="card-img fiftycent-bg"></div>
+                  <div class="card-body">
+                    <div class="card-text">
+                      <div class="name">50 Cent</div>
+                      <div class="schedule">23:20 - 00:15</div>
+                    </div>
+                    <div class="arrow">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a href="#">
+                  <div class="card-img bustarhymes-bg"></div>
+                  <div class="card-body">
+                    <div class="card-text">
+                      <div class="name">Busta Rhymes</div>
+                      <div class="schedule">17:05 - 17:55</div>
+                    </div>
+                    <div class="arrow">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a href="artists/jayz.html">
+                  <div class="card-img jayz-bg"></div>
+                  <div class="card-body">
+                    <div class="card-text">
+                      <div class="name">Jay-Z</div>
+                      <div class="schedule">20:50 - 21:55</div>
+                    </div>
+                    <div class="arrow">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a href="#">
+                  <div class="card-img kanye-bg"></div>
+                  <div class="card-body">
+                    <div class="card-text">
+                      <div class="name">Kanye West</div>
+                      <div class="schedule">19:45 - 20:50</div>
+                    </div>
+                    <div class="arrow">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a href="#">
+                  <div class="card-img nas-bg"></div>
+                  <div class="card-body">
+                    <div class="card-text">
+                      <div class="name">Nas</div>
+                      <div class="schedule">18:55 - 19:40</div>
+                    </div>
+                    <div class="arrow">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a href="#">
+                  <div class="card-img nelly-bg"></div>
+                  <div class="card-body">
+                    <div class="card-text">
+                      <div class="name">Nelly</div>
+                      <div class="schedule">18:00 - 18:55</div>
+                    </div>
+                    <div class="arrow">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a href="#">
+                  <div class="card-img outkast-bg"></div>
+                  <div class="card-body">
+                    <div class="card-text">
+                      <div class="name">Outkast</div>
+                      <div class="schedule">17:05 - 17:55</div>
+                    </div>
+                    <div class="arrow">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card">
+                <a href="#">
+                  <div class="card-img mosdef-bg"></div>
+                  <div class="card-body">
+                    <div class="card-text">
+                      <div class="name">Mos Def</div>
+                      <div class="schedule">18:00 - 18:55</div>
+                    </div>
+                    <div class="arrow">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <script src="../js/lineup.js"></script>
+      </main>
+      <footer>
+        <div class="wrapper">
+          <h4>retro rap festival</h4>
+          <nav>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="#line-up">Line-up</a></li>
+              <li><a href="../pages/tickets.html">Tickets</a></li>
+              <li><a href="../pages/faq.html">FAQ</a></li>
+              <li><a href="partners.html">Partenaires</a></li>
+              <li><a href="../pages/contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="socials">
+            <li>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+          </div>
+          <div class="credits">
+            <p>
+              Copyright &copy 2023 • Retro Rap Festival. Bruxelles — Tous droits
+              réservés
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="../js/animation.js"></script>
+  </body>
 </html>

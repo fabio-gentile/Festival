@@ -5,7 +5,7 @@
       @include spaceNav;
       .wrapper{
             @include wrapper(-300);
-            h3{
+            h2{
                   @include titleSection();
             }
             .container{

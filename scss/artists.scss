@@ -26,7 +26,7 @@ section {
                         flex-direction: column;
                         gap: .8rem;
                         margin-top: .7rem;
-                        h5{
+                        h2{
                               @include titleSection();
                               text-align: center;
                               display: none;
@@ -48,7 +48,7 @@ section {
                         @include breakpoint(770){
                               order: 3;
                         }
-                        h5{
+                        h2{
                               @include titleSection();
                               text-align: left;
                               @include breakpoint(770){
