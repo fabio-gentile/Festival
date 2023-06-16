@@ -27,8 +27,13 @@ a {
   text-decoration: none;
 }
 
-ul, li {
+ul,
+li {
   list-style: none;
+}
+
+.fade {
+  opacity: 0;
 }
 
 #tickets {

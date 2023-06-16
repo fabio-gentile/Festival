@@ -1,146 +1,184 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta
-            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-            name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      name="viewport"
     />
     <meta content="ie=edge" http-equiv="X-UA-Compatible" />
-    <link rel="preload"
-          href="../fonts/gobold/Gobold_Regular.woff"
-          as="font"
-          type="font/woff"
-          crossorigin />
-    <link rel="preload"
-          href="../fonts/gobold/Gobold_Bold.woff"
-          as="font"
-          type="font/woff"
-          crossorigin />
-    <meta name="author" content="Fabio Gentile" />
-    <meta name="title" content="Retro Rap Festival Partenaires" />
-    <meta name="description" content="Découvrez nos partenaires" />
-    <meta property="og:title" content="Retro Rap Festival Partenaires" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="../img/home/stage.jpg" />
-    <meta property="og:image:width" content="1280">
-    <meta property="og:image:height" content="720">
-    <meta property="og:description" content="Découvrez nos partenaires" />
-    <meta property="og:locale" content="fr_FR" />
-    <meta property="og:site_name" content="Retro Rap Festival" />
     <link
-            href="../img/favicon-32x32.png"
-            rel="shortcut icon"
-            type="image/x-icon"
+      as="font"
+      crossorigin
+      href="../fonts/gobold/Gobold_Regular.woff"
+      rel="preload"
+      type="font/woff"
     />
-    <link href="../scss/partials/animation.css" rel="stylesheet">
+    <link
+      as="font"
+      crossorigin
+      href="../fonts/gobold/Gobold_Bold.woff"
+      rel="preload"
+      type="font/woff"
+    />
+    <meta content="Fabio Gentile" name="author" />
+    <meta content="Retro Rap Festival Partenaires" name="title" />
+    <meta content="Découvrez nos partenaires" name="description" />
+    <meta content="Retro Rap Festival Partenaires" property="og:title" />
+    <meta content="website" property="og:type" />
+    <meta content="../img/home/stage.jpg" property="og:image" />
+    <meta content="1280" property="og:image:width" />
+    <meta content="720" property="og:image:height" />
+    <meta content="Découvrez nos partenaires" property="og:description" />
+    <meta content="fr_FR" property="og:locale" />
+    <meta content="Retro Rap Festival" property="og:site_name" />
+    <link
+      href="../img/favicon-32x32.png"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <link href="../scss/partials/animation.css" rel="stylesheet" />
     <link href="../scss/partials/navbar.css" rel="stylesheet" />
     <link href="../scss/partials/footer.css" rel="stylesheet" />
     <link href="../scss/partenaires.css" rel="stylesheet" />
     <link
-            crossorigin="anonymous"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-            referrerpolicy="no-referrer"
-            rel="stylesheet"
+      crossorigin="anonymous"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      referrerpolicy="no-referrer"
+      rel="stylesheet"
     />
     <title>Partenaires - Retro Rap Festival</title>
-</head>
-<body>
-<!--  chargement-->
-<div class="lds-ring">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-</div>
-<!--      navbar-->
-<header>
-    <nav class="nav">
-        <div class="wrapper">
-            <div class="nav-logo">Retro Rap Festival</div>
+  </head>
+  <body>
+    <!--  chargement-->
+    <div class="lds-ring">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="fade">
+      <!--      navbar-->
+      <header>
+        <nav class="nav">
+          <div class="wrapper">
+            <div class="nav-logo">
+              <a href="../index.html">Retro Rap Festival</a>
+            </div>
             <ul>
-                <li class="nav-link">
-                    <a href="../index.html">Home</a>
-                </li>
-                <li class="nav-link">
-                    <a href="./lineup.html">Line-up</a>
-                </li>
-                <li class="nav-link">
-                    <a href="./tickets.html">Tickets</a>
-                </li>
-                <li class="nav-link">
-                    <a href="./faq.html">FAQ</a>
-                </li>
-                <li class="nav-link">
-                    <a href="./partenaires.html">Partenaires</a>
-                </li>
-                <li class="nav-link">
-                    <a href="./contact.html">Contact</a>
-                </li>
-                <li class="nav-link">
-                    <div class="burger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </li>
+              <li class="nav-link">
+                <a href="../index.html">Home</a>
+              </li>
+              <li class="nav-link">
+                <a href="./lineup.html">Line-up</a>
+              </li>
+              <li class="nav-link">
+                <a href="./tickets.html">Tickets</a>
+              </li>
+              <li class="nav-link">
+                <a href="./faq.html">FAQ</a>
+              </li>
+              <li class="nav-link">
+                <a href="./partenaires.html">Partenaires</a>
+              </li>
+              <li class="nav-link">
+                <a href="./contact.html">Contact</a>
+              </li>
+              <li class="nav-link">
+                <div class="burger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </li>
             </ul>
-        </div>
-    </nav>
-</header>
-<script src="../js/navbar.js"></script>
-<main>
-    <section id="partenaires">
-        <div class="wrapper">
+          </div>
+        </nav>
+      </header>
+      <script src="../js/navbar.js"></script>
+      <main>
+        <section id="partenaires">
+          <div class="wrapper">
             <h3>Partenaires</h3>
             <div class="container">
-                <div class="box"><a href="https://fr.jbl.com/" target="_blank"></a><div class="logo jbl"></div></div>
-                <div class="box"><a href="https://www.dhl.com/be-fr/home.html" target="_blank"></a><div class="logo dhl"></div></div>
-                <div class="box"><a href="https://www.mastercard.be/fr-be.html/" target="_blank"></a><div class="logo mastercard"></div></div>
-                <div class="box"><a href="https://www.samsung.com/be_fr/" target="_blank"></a><div class="logo samsung"></div></div>
-                <div class="box"><a href="https://www.prada.com/be/fr.html" target="_blank"></a><div class="logo prada"></div></div>
-                <div class="box"><a href="https://open.spotify.com/" target="_blank"></a><div class="logo spotify"></div></div>
-                <div class="box"><a href="https://www.pirelli.com/tyres/fr-be/auto/homepage/" target="_blank"></a><div class="logo pirelli"></div></div>
+              <div class="box">
+                <a href="https://fr.jbl.com/" target="_blank"></a>
+                <div class="logo jbl"></div>
+              </div>
+              <div class="box">
+                <a
+                  href="https://www.dhl.com/be-fr/home.html"
+                  target="_blank"
+                ></a>
+                <div class="logo dhl"></div>
+              </div>
+              <div class="box">
+                <a
+                  href="https://www.mastercard.be/fr-be.html/"
+                  target="_blank"
+                ></a>
+                <div class="logo mastercard"></div>
+              </div>
+              <div class="box">
+                <a href="https://www.samsung.com/be_fr/" target="_blank"></a>
+                <div class="logo samsung"></div>
+              </div>
+              <div class="box">
+                <a href="https://www.prada.com/be/fr.html" target="_blank"></a>
+                <div class="logo prada"></div>
+              </div>
+              <div class="box">
+                <a href="https://open.spotify.com/" target="_blank"></a>
+                <div class="logo spotify"></div>
+              </div>
+              <div class="box">
+                <a
+                  href="https://www.pirelli.com/tyres/fr-be/auto/homepage/"
+                  target="_blank"
+                ></a>
+                <div class="logo pirelli"></div>
+              </div>
             </div>
-        </div>
-    </section>
-</main>
-<footer>
-    <div class="wrapper">
-        <h4>retro rap festival</h4>
-        <nav>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="wrapper">
+          <h4>retro rap festival</h4>
+          <nav>
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../pages/lineup.html">Line-up</a></li>
-                <li><a href="../pages/tickets.html">Tickets</a></li>
-                <li><a href="../pages/faq.html">FAQ</a></li>
-                <li><a href="#partenaires">Partenaires</a></li>
-                <li><a href="../pages/contact.html">Contact</a></li>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../pages/lineup.html">Line-up</a></li>
+              <li><a href="../pages/tickets.html">Tickets</a></li>
+              <li><a href="../pages/faq.html">FAQ</a></li>
+              <li><a href="#partenaires">Partenaires</a></li>
+              <li><a href="../pages/contact.html">Contact</a></li>
             </ul>
-        </nav>
-        <div class="socials">
+          </nav>
+          <div class="socials">
             <li>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
             </li>
             <li>
-                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
             </li>
             <li>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
             </li>
             <li>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
             </li>
-        </div>
-        <div class="credits">
+          </div>
+          <div class="credits">
             <p>
-                Copyright &copy 2023 • Retro Rap Festival. Bruxelles — Tous droits
-                réservés
+              Copyright &copy 2023 • Retro Rap Festival. Bruxelles — Tous droits
+              réservés
             </p>
+          </div>
         </div>
+      </footer>
     </div>
-</footer>
-<script src="../js/animation.js"></script>
-</body>
+    <script src="../js/animation.js"></script>
+  </body>
 </html>

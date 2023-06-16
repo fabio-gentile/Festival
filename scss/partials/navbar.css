@@ -90,6 +90,13 @@ header .nav .wrapper .nav-logo {
   width: fit-content;
   align-self: center;
 }
+header .nav .wrapper .nav-logo a {
+  color: #ffffff;
+}
+header .nav .wrapper .nav-logo a:hover {
+  color: #ffd700;
+  transition: color 0.2s;
+}
 header .nav .wrapper ul {
   display: flex;
   align-items: center;

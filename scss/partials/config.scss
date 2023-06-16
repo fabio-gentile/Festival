@@ -7,17 +7,17 @@ $fontTitleBold: "Gobold Bold";
 $fontTitleReg: "Gobold Regular";
 $fontText: "Source Sans Pro";
 $navBarHeight: 10vh;
-@mixin init{
+@mixin init {
   @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap");
   @font-face {
     font-family: "Gobold Bold";
     src: local("Gobold Bold"),
-    url("../../fonts/gobold/Gobold_Bold.woff") format("woff");
+      url("../../fonts/gobold/Gobold_Bold.woff") format("woff");
   }
   @font-face {
     font-family: "Gobold Regular";
     src: local("Gobold Regular"),
-    url("../../fonts/gobold/Gobold_Regular.woff") format("woff");
+      url("../../fonts/gobold/Gobold_Regular.woff") format("woff");
   }
   * {
     margin: 0;
@@ -29,7 +29,7 @@ $navBarHeight: 10vh;
   //  color: $grey;
   //  background-color: rgba(255, 215, 0, 0.9);
   //}
-  body{
+  body {
     background-color: $grey;
     //background-image: url("../../img/background.svg");
     //background-repeat: no-repeat;
@@ -38,27 +38,33 @@ $navBarHeight: 10vh;
     //height: 100%;
     line-height: 150%;
   }
-  main{
+  main {
     min-height: 100vh - $navBarHeight;
   }
-  a{
+  a {
     text-decoration: none;
   }
-  ul, li{
+  ul,
+  li {
     list-style: none;
+  }
+  .fade {
+    opacity: 0;
+    //transition: opacity 5s;
   }
 }
 
-@mixin gradientCol($direction){
-    background: linear-gradient(to $direction, $greyDark, $grey);
+@mixin gradientCol($direction) {
+  background: linear-gradient(to $direction, $greyDark, $grey);
 }
+
 @mixin breakpoint($size) {
   @media (max-width: $size + px) {
     @content;
   }
 }
 
-@mixin titleSection($fontSize: 0){
+@mixin titleSection($fontSize: 0) {
   font-family: $fontTitleReg;
   letter-spacing: 1px;
   @include fontSize(title, $fontSize);
@@ -67,94 +73,99 @@ $navBarHeight: 10vh;
   text-transform: lowercase;
 }
 
-@mixin fontSize($type, $plus: 0){
-  @if $type == title{
+@mixin fontSize($type, $plus: 0) {
+  @if $type == title {
     font-size: 2.25rem + $plus;
     font-family: $fontTitleReg;
     text-transform: lowercase;
     letter-spacing: 1px;
     line-height: 160%;
-    @include breakpoint(768){
+    @include breakpoint(768) {
       font-size: 2rem + $plus;
     }
   }
-  @if $type == subtitle{
+  @if $type == subtitle {
     font-size: 1.5rem + $plus;
-    @include breakpoint(1024){
+    @include breakpoint(1024) {
       font-size: 1.25rem + $plus;
     }
-    @include breakpoint(768){
+    @include breakpoint(768) {
       font-size: 1.125rem + $plus;
     }
   }
-  @if $type == text{
+  @if $type == text {
     font-size: 1.125rem + $plus;
     font-family: $fontText;
     color: $white;
-    @include breakpoint(480){
+    @include breakpoint(480) {
       font-size: 1rem + $plus;
     }
   }
 }
 
-@mixin flexCenter{
+@mixin flexCenter {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-@mixin button($padTop: 0, $padBot: 0){
-  .button{
+@mixin button($padTop: 0, $padBot: 0) {
+  .button {
     //margin-top: 2.25rem;
     display: flex;
     justify-content: center;
-    button{
+
+    button {
       background: transparent;
       border: 2px solid $gold;
       border-radius: 3px;
       width: fit-content;
       outline: none;
-      padding: (($padTop + .75rem) ($padBot + 2.5rem));
+      padding: (($padTop + 0.75rem) ($padBot + 2.5rem));
       cursor: pointer;
-      a{
+
+      a {
         color: $gold;
         text-decoration: none;
         text-transform: lowercase;
         text-align: center;
-        @include fontSize(subtitle, .25rem);
+        @include fontSize(subtitle, 0.25rem);
         font-family: $fontTitleReg;
         letter-spacing: 1px;
       }
-      &:hover{
+
+      &:hover {
         background: $gold;
-        transition: all .2s ease-in-out;
+        transition: all 0.2s ease-in-out;
         border: 2px solid transparent;
-        a{
+
+        a {
           color: $grey;
         }
       }
-      @include breakpoint(480){
-        padding: (($padTop + .5rem) ($padBot + 1rem));
+
+      @include breakpoint(480) {
+        padding: (($padTop + 0.5rem) ($padBot + 1rem));
       }
     }
   }
 }
 
-@mixin spaceSection{
+@mixin spaceSection {
   margin-top: 4rem;
-  @include breakpoint(768){
+  @include breakpoint(768) {
     margin-top: 3rem;
   }
 }
 
-@mixin spaceNav{
+@mixin spaceNav {
   padding-top: $navBarHeight * 1.5;
 }
 
-@mixin wrapper($width: 0){
+@mixin wrapper($width: 0) {
   width: 1200px + $width;
   margin: 0 auto;
-  @include breakpoint(1250 + $width){
+  @include breakpoint(1250 + $width) {
     width: 90%;
   }
 }

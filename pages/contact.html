@@ -1,175 +1,186 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta
-            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-            name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      name="viewport"
     />
     <meta content="ie=edge" http-equiv="X-UA-Compatible" />
-    <link rel="preload"
-          href="../fonts/gobold/Gobold_Regular.woff"
-          as="font"
-          type="font/woff"
-          crossorigin />
-    <link rel="preload"
-          href="../fonts/gobold/Gobold_Bold.woff"
-          as="font"
-          type="font/woff"
-          crossorigin />
-    <meta name="author" content="Fabio Gentile" />
-    <meta name="title" content="Retro Rap Festival Contact" />
-    <meta name="description" content="Nous contacter" />
-    <meta property="og:title" content="Retro Rap Festival Contact" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="" />
-    <meta property="og:description" content="Nous contacter" />
-    <meta property="og:locale" content="fr_FR" />
-    <meta property="og:site_name" content="Retro Rap Festival" />
     <link
-            href="../img/favicon-32x32.png"
-            rel="shortcut icon"
-            type="image/x-icon"
+      as="font"
+      crossorigin
+      href="../fonts/gobold/Gobold_Regular.woff"
+      rel="preload"
+      type="font/woff"
     />
-    <link href="../scss/partials/animation.css" rel="stylesheet">
+    <link
+      as="font"
+      crossorigin
+      href="../fonts/gobold/Gobold_Bold.woff"
+      rel="preload"
+      type="font/woff"
+    />
+    <meta content="Fabio Gentile" name="author" />
+    <meta content="Retro Rap Festival Contact" name="title" />
+    <meta content="Nous contacter" name="description" />
+    <meta content="Retro Rap Festival Contact" property="og:title" />
+    <meta content="website" property="og:type" />
+    <meta content="" property="og:image" />
+    <meta content="Nous contacter" property="og:description" />
+    <meta content="fr_FR" property="og:locale" />
+    <meta content="Retro Rap Festival" property="og:site_name" />
+    <link
+      href="../img/favicon-32x32.png"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <link href="../scss/partials/animation.css" rel="stylesheet" />
     <link href="../scss/partials/navbar.css" rel="stylesheet" />
     <link href="../scss/partials/footer.css" rel="stylesheet" />
     <link href="../scss/contact.css" rel="stylesheet" />
     <link
-            crossorigin="anonymous"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-            referrerpolicy="no-referrer"
-            rel="stylesheet"
+      crossorigin="anonymous"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      referrerpolicy="no-referrer"
+      rel="stylesheet"
     />
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script async defer src="https://www.google.com/recaptcha/api.js"></script>
     <title>Contact - Retro Rap Festival</title>
-</head>
-<body>
-<!--  chargement-->
-<div class="lds-ring">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-</div>
-<!--      navbar-->
-<header>
-    <nav class="nav">
-        <div class="wrapper">
-            <div class="nav-logo">Retro Rap Festival</div>
+  </head>
+  <body>
+    <!--  chargement-->
+    <div class="lds-ring">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="fade">
+      <!--      navbar-->
+      <header>
+        <nav class="nav">
+          <div class="wrapper">
+            <div class="nav-logo">
+              <a href="../index.html">Retro Rap Festival</a>
+            </div>
             <ul>
-                <li class="nav-link">
-                    <a href="../index.html">Home</a>
-                </li>
-                <li class="nav-link">
-                    <a href="./lineup.html">Line-up</a>
-                </li>
-                <li class="nav-link">
-                    <a href="./tickets.html">Tickets</a>
-                </li>
-                <li class="nav-link">
-                    <a href="./faq.html">FAQ</a>
-                </li>
-                <li class="nav-link">
-                    <a href="./partenaires.html">Partenaires</a>
-                </li>
-                <li class="nav-link">
-                    <a href="./contact.html">Contact</a>
-                </li>
-                <li class="nav-link">
-                    <div class="burger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </li>
+              <li class="nav-link">
+                <a href="../index.html">Home</a>
+              </li>
+              <li class="nav-link">
+                <a href="./lineup.html">Line-up</a>
+              </li>
+              <li class="nav-link">
+                <a href="./tickets.html">Tickets</a>
+              </li>
+              <li class="nav-link">
+                <a href="./faq.html">FAQ</a>
+              </li>
+              <li class="nav-link">
+                <a href="./partenaires.html">Partenaires</a>
+              </li>
+              <li class="nav-link">
+                <a href="./contact.html">Contact</a>
+              </li>
+              <li class="nav-link">
+                <div class="burger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </li>
             </ul>
-        </div>
-    </nav>
-</header>
-<script src="../js/navbar.js"></script>
-<main>
-    <section id="contact">
-        <div class="wrapper">
+          </div>
+        </nav>
+      </header>
+      <script src="../js/navbar.js"></script>
+      <main>
+        <section id="contact">
+          <div class="wrapper">
             <h3>Contact</h3>
             <div class="container">
-                <div class="info">
-                    <div class="email">
-                        <a href="mailto:#">
-                            <i class="fa-solid fa-envelope"></i>
-                            <p>retrorapfestival@contact.be</p>
-                        </a>
-                    </div>
-                    <div class="phone">
-                        <a href="tel:#">
-                            <i class="fa-solid fa-phone"></i>
-                            <p>+32.496.12.34.56</p>
-                        </a>
-                    </div>
+              <div class="info">
+                <div class="email">
+                  <a href="mailto:#">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>retrorapfestival@contact.be</p>
+                  </a>
                 </div>
-                <p>Ou via le formulaire ci-dessous</p>
-                <div class="form">
-                    <form action="#" method="post">
-                        <div class="form-group">
-                            <input type="text" name="name" id="name" required>
-                            <label for="name">Nom</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" name="email" id="email" required>
-                            <label for="email">Adresse email</label>
-                        </div>
-                        <div class="form-group">
-                            <textarea name="message" id="message" required></textarea>
-                            <label for="message">Message</label>
-                        </div>
-                        <div class="submit">
-                            <input type="submit" value="ENVOYER">
-                            <div class="captcha">
-                                <div class="g-recaptcha" data-sitekey="6Ldu7J4mAAAAAKi5qeA-qzVnoytYX9RmEl6PvwLc"></div>
-                            </div>
-                        </div>
-                    </form>
+                <div class="phone">
+                  <a href="tel:#">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+32.496.12.34.56</p>
+                  </a>
                 </div>
+              </div>
+              <p>Ou via le formulaire ci-dessous</p>
+              <div class="form">
+                <form action="#" method="post">
+                  <div class="form-group">
+                    <input id="name" name="name" required type="text" />
+                    <label for="name">Nom</label>
+                  </div>
+                  <div class="form-group">
+                    <input id="email" name="email" required type="email" />
+                    <label for="email">Adresse email</label>
+                  </div>
+                  <div class="form-group">
+                    <textarea id="message" name="message" required></textarea>
+                    <label for="message">Message</label>
+                  </div>
+                  <div class="submit">
+                    <input type="submit" value="ENVOYER" />
+                    <div class="captcha">
+                      <div
+                        class="g-recaptcha"
+                        data-sitekey="6Ldu7J4mAAAAAKi5qeA-qzVnoytYX9RmEl6PvwLc"
+                      ></div>
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div>
-        </div>
-    </section>
-</main>
-<footer>
-    <div class="wrapper">
-        <h4>retro rap festival</h4>
-        <nav>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="wrapper">
+          <h4>retro rap festival</h4>
+          <nav>
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../pages/lineup.html">Line-up</a></li>
-                <li><a href="../pages/tickets.html">Tickets</a></li>
-                <li><a href="../pages/faq.html">FAQ</a></li>
-                <li><a href="../pages/partenaires.html">Partenaires</a></li>
-                <li><a href="#contact">Contact</a></li>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../pages/lineup.html">Line-up</a></li>
+              <li><a href="../pages/tickets.html">Tickets</a></li>
+              <li><a href="../pages/faq.html">FAQ</a></li>
+              <li><a href="../pages/partenaires.html">Partenaires</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
-        <div class="socials">
+          </nav>
+          <div class="socials">
             <li>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
             </li>
             <li>
-                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
             </li>
             <li>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
             </li>
             <li>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
             </li>
-        </div>
-        <div class="credits">
+          </div>
+          <div class="credits">
             <p>
-                Copyright &copy 2023 • Retro Rap Festival. Bruxelles — Tous droits
-                réservés
+              Copyright &copy 2023 • Retro Rap Festival. Bruxelles — Tous droits
+              réservés
             </p>
+          </div>
         </div>
+      </footer>
     </div>
-</footer>
-<script src="../js/animation.js"></script>
-</body>
+    <script src="../js/animation.js"></script>
+  </body>
 </html>
