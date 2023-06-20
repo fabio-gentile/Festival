@@ -12,22 +12,26 @@ $name: fiftycent, drdre, eminem, icecube, jayz, kanye, nelly, outkast, snoop;
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center 20%;
-            height: 65vh;
             position: relative;
+            min-height: 60vh;
+            height: fit-content;
             width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 4rem 0;
             @include breakpoint(1200){
-                  height: fit-content;
+                  min-height: initial;
+            }
+            @include breakpoint(800){
+                  padding: 3rem 0;
+            }
+            @include breakpoint(420){
                   padding: 2rem 0;
             }
             .wrapper{
                   @include wrapper;
-                  height: 100%;
                   .list{
-                        //@include spaceSection;
                         font-family: $fontTitleReg;
-                        height: 100%;
-                        display: flex;
-                        align-items: center;
                         ul{
                               .active{
                                     transition: all .3s ease-in-out;
@@ -47,6 +51,7 @@ $name: fiftycent, drdre, eminem, icecube, jayz, kanye, nelly, outkast, snoop;
                                           color: $white;
                                           @include fontSize(subtitle);
                                           text-transform: lowercase;
+                                          letter-spacing: 1px;
                                     }
                                     &:last-child {
                                           transition: all .1s ease-in-out;
