@@ -43,6 +43,9 @@
                         &.active{
                               border: 2px solid $gold;
                               .content{
+                                    h3{
+                                          color: $gold;
+                                    }
                                     .basket{
                                           strong{
                                                 color: $gold;
@@ -61,6 +64,7 @@
                               gap: 2rem;
                               h3{
                                     @include titleSection();
+                                    color: $white;
                               }
                               .text{
                                     @include fontSize(text, .125rem);
