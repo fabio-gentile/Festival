@@ -2,7 +2,7 @@
 $name: fiftycent, drdre, eminem, icecube, jayz, kanye, nelly, outkast, snoop;
 @each $iteration in $name {
       .#{$iteration}-bg {
-            background-image: url("../../img/home/#{$iteration}.jpg");
+            background-image: url("../../img/home/#{$iteration}.webp");
       }
 }
 .home-artiste{
@@ -38,6 +38,7 @@ $name: fiftycent, drdre, eminem, icecube, jayz, kanye, nelly, outkast, snoop;
                                     background: $gold;
                                     a{
                                           color: $grey;
+                                          text-shadow: initial;
                                     }
                               }
                               li{
@@ -52,6 +53,7 @@ $name: fiftycent, drdre, eminem, icecube, jayz, kanye, nelly, outkast, snoop;
                                           @include fontSize(subtitle);
                                           text-transform: lowercase;
                                           letter-spacing: 1px;
+                                          text-shadow: 1px 1px $grey;
                                     }
                                     &:last-child {
                                           transition: all .1s ease-in-out;

@@ -80,9 +80,14 @@ $name: bustarhymes, fiftycent, drdre, eminem, icecube, jayz, kanye, lilwayne, mo
                                     background-size: cover;
                                     position: relative;
                                     overflow: hidden;
-                                    &:hover::before{
-                                          left: 0;
+                                    @media (hover: hover) {
+                                          &:hover::before{
+                                                left: 0;
+                                          }
                                     }
+                                    //&:hover::before{
+                                    //      left: 0;
+                                    //}
                                     &::before{
                                           content: "En savoir plus";
                                           width: 100%;

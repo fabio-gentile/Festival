@@ -1,7 +1,7 @@
 $gold: #ffd700;
 $grey: #1d1d1d;
 $white: #ffffff;
-$greyDark: #1a1a1a;
+$greyDark: #181818;
 $fontTitleReg: "Gobold Regular";
 $fontText: "Source Sans Pro";
 $navBarHeight: 100px;
@@ -24,7 +24,7 @@ $navBarHeight: 100px;
   //}
   body {
     background-color: $grey;
-    line-height: 150%;
+    line-height: 1.5;
     font-family: Arial, sans-serif;
   }
   main {
@@ -67,7 +67,7 @@ $navBarHeight: 100px;
     font-family: $fontTitleReg;
     text-transform: lowercase;
     letter-spacing: 1px;
-    line-height: 160%;
+    line-height: 1.6;
     @include breakpoint(768) {
       font-size: 2rem + $plus;
     }
