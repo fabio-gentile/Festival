@@ -1,6 +1,8 @@
 
 # Projet d'examen web statique : Retro Rap Festival
 
+![Miniature Retro Rap Festival](https://fabiogentile.me/thumbnail/retrorapfestival.png)
+
 ## Introduction
 
 L'objectif de cet examen était de créer un site web statique sur un festival musical fictif. Le site devait comporter au minimum :
