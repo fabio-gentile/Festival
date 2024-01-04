@@ -1,7 +1,7 @@
 
 # Projet d'examen web statique : Retro Rap Festival
 
-![Miniature Retro Rap Festival](https://fabiogentile.me/thumbnail/retrorapfestival.png)
+![Miniature Retro Rap Festival](https://fabiogentile.me/thumbnail/retrorapfestival.webp)
 
 ## Introduction
 
